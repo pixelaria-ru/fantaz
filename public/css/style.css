@@ -1,0 +1,183 @@
+@import '../fonts/fonts.css';
+
+:root
+{
+    --pink: #ea6969;
+    --darkBlue: #488999;
+}
+
+body
+{
+    font-family: 'Circe', sans-serif;
+}
+
+.flex
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container
+{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header__up-line
+{
+    height: 110px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav
+{
+    max-height: 50px;
+    padding: calc((50px - 16px) / 2) 0;
+
+    background: #488999;
+
+    background: var(--darkBlue);
+}
+
+.link
+{
+    margin-left: 25px;
+}
+
+.link--mail
+{
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    text-decoration: underline;
+
+    color: #505050;
+}
+
+.link--tel
+{
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    color: #505050;
+}
+
+.link--tel span
+{
+    color: #488999;
+}
+
+.link--button
+{
+    font-size: 1rem;
+    font-weight: 400;
+
+    max-width: 138px;
+    max-height: 50px;
+    padding: 15px 30px;
+
+    color: #488999;
+    border: 1px solid #488999;
+    border-radius: 30px;
+}
+
+.logotype
+{
+    align-items: center;
+}
+
+.logotype img
+{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logotype span
+{
+    font-size: 1.125rem;
+
+    margin-left: 17px;
+
+    color: #333;
+}
+
+.header-list__item
+{
+    margin-right: 30px;
+}
+
+.header-list__item a
+{
+    font-size: 1rem;
+
+    color: #fff;
+}
+
+*
+{
+    font-size: 100%;
+    line-height: 100%;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button
+{
+    cursor: pointer;
+
+    border: 0;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    font-family: 'Circe', sans-serif;
+}
+
+::-moz-selection
+{
+    color: #fff;
+    background: #ea6969;
+    background: var(--pink);
+}
+
+::selection
+{
+    color: #fff;
+    background: #ea6969;
+    background: var(--pink);
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+
+    -o-object-fit: cover;
+
+       object-fit: cover;
+}
+
+input
+{
+    border: 0;
+}
+
+input[type='submit'] + label
+{
+    cursor: pointer;
+}
