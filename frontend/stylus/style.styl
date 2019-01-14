@@ -2,12 +2,48 @@
 :root
   --pink #ea6969
   --darkBlue #488999
-body
-  font-family "Circe", sans-serif
+
 .flex
   display flex
 .container
   max-width 1280px
   margin auto
+  padding 0 85px
+.section
+  h2
+    color #444444
+    font-size 36px
+    text-align center
+    font-weight 400
+    line-height 48px
+.button
+  max-height 50px
+  border-radius 30px
+  color #777777
+  margin-right 15px
+  margin-bottom 20px
+  padding calc((50px - 16px) / 2) 30px
+  font-size 16px
+  font-weight 400
+  background-color #fff
+  border 1px solid
+  &--blue
+    border-color #56b3ca
+    &.active
+      background-color #56b3ca
+      color #fff
+  &--pink
+    border-color #ea6969
+    color #fff
+    background-color #ea6969
 @import 'inc/header.styl'
+@import 'inc/footer.styl'
+
+@import 'section/initial-section.styl'
+@import 'section/education-programs.styl'
+@import 'section/education-formats.styl'
+@import 'section/education-results.styl'
+@import 'section/about.styl'
+@import 'section/news.styl'
+
 @import 'inc/reset.styl'
