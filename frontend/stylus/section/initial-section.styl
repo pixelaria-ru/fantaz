@@ -10,6 +10,15 @@
     top 185px
     transform skewY(-36deg)
     background-color #56b3ca
+  &:before
+    content ''
+    border 125px solid transparent
+    border-bottom-color #ffffff
+    border-right-color #ffffff
+    position absolute
+    bottom 0
+    z-index 1
+    right 185px
   .container
     position relative
     height 100%
@@ -23,12 +32,16 @@
       border-left-color #fff
     &:after
       content ''
-      border 125px solid transparent
-      border-bottom-color #ffffff
-      border-right-color #ffffff
       position absolute
-      bottom 0
-      right 185px
+      height 0
+      width 225px
+      top 61px
+      left 490px
+      border-bottom 125px solid #569fb1
+      border-left 125px solid transparent
+      border-right 125px solid transparent
+      transform rotate(-45deg)
+
   img
     position absolute
   h1
@@ -61,12 +74,16 @@
         font-weight 400
         line-height 32px
   a
-    color #ea6969
+    color var(--pink)
     font-size 18px
     font-weight 400
     position relative
     display flex
     align-items center
+    width max-content
+    &:hover
+      &:after
+        width calc(100% - 55px)
     &:before
       content url(../images/initial-link.png)
       width 40px
@@ -80,6 +97,7 @@
       position absolute
       left calc(40px + 15px)
       bottom 10px
+      transition .55s
       height 1px
       background-color #ea6969
 

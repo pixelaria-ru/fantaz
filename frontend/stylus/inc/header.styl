@@ -31,6 +31,10 @@
     border-radius 30px
     border 1px solid #488999
     padding 15px 30px
+    transition .33s
+    &:hover
+      background #488999
+      color #fff
 
 .logotype
   align-items center
@@ -47,3 +51,14 @@
     a
       color #ffffff
       font-size 16px
+      &:hover
+        &:after
+          width 100%
+      &:after
+        content ''
+        display block
+        height 1px
+        background #fff
+        margin-top 2px
+        transition .55s
+        width 0%

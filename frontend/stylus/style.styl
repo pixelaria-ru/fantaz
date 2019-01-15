@@ -29,6 +29,11 @@
   border 1px solid
   &--blue
     border-color #56b3ca
+    transition .33s
+    &:hover
+      border-color #488999
+      background #488999
+      color #fff
     &.active
       background-color #56b3ca
       color #fff
@@ -38,12 +43,13 @@
     background-color #ea6969
 @import 'inc/header.styl'
 @import 'inc/footer.styl'
+@import 'inc/reset.styl'
 
 @import 'section/initial-section.styl'
 @import 'section/education-programs.styl'
 @import 'section/education-formats.styl'
+@import 'section/our-clients.styl'
 @import 'section/education-results.styl'
 @import 'section/about.styl'
+@import 'section/completed-projects.styl'
 @import 'section/news.styl'
-
-@import 'inc/reset.styl'
