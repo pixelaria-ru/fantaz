@@ -6,6 +6,11 @@
     --darkBlue: #488999;
 }
 
+.main
+{
+    margin-top: 160px;
+}
+
 .flex
 {
     display: -webkit-box;
@@ -75,12 +80,110 @@
     background: #ea6969;
 }
 
+.main-form
+{
+    position: fixed;
+    z-index: -9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    flex-direction: column;
+
+    width: 480px;
+    height: 535px;
+    margin: auto;
+
+    transition: .55s;
+
+    opacity: 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 16px rgba(227,231,235,.5), 0 0 4px rgba(0,0,0,.1);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form.active
+{
+    z-index: 99;
+
+    opacity: 1;
+}
+
+.main-form button
+{
+    width: 400px;
+}
+
+.main-form p
+{
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    margin: 25px 0 30px;
+
+    opacity: .5;
+    color: #646464;
+}
+
+.main-form textarea
+{
+    width: 400px;
+    height: 120px;
+
+    border: 0;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.main-form input
+{
+    font-size: 1rem;
+    font-weight: 400;
+
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+
+    color: #afafaf;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 1px 10px rgba(188,188,188,.3);
+}
+
+.header
+{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+}
+
 .header__up-line
+{
+    width: 100%;
+
+    background: #fff;
+}
+
+.header__up-line .container
 {
     height: 110px;
 
     align-items: center;
     justify-content: space-between;
+}
+
+.header__up-line.fixed
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
 }
 
 .header__nav
@@ -558,14 +661,53 @@ input[type='submit'] + label
 
 .article-edu-program
 {
-    position: relative;
+    overflow: hidden;
 
-    margin-bottom: 20px;
+    height: 100px;
+    margin-bottom: 30px;
+
+    transition: .55s;
 
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.article-edu-program.active
+{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.article-edu-program.active .article-program__info
+{
+    background: #56b3ca;
+}
+
+.article-edu-program.active .article-program__info .button
+{
+    border-color: #fff;
+    background: 0;
+}
+
+.article-edu-program.active h3
+{
+    color: #fff;
+}
+
+.article-edu-program .article-program__info
+{
+    position: relative;
 
     align-items: center;
+}
+
+.article-edu-program .article-program__info .button
+{
+    position: absolute;
+    right: 50px;
+
+    min-width: 170px;
 }
 
 .article-edu-program:last-child
@@ -589,10 +731,124 @@ input[type='submit'] + label
     color: #444;
 }
 
-.article-edu-program .button
+.article-edu-program .article-program__more-info
 {
+    position: relative;
+
+    width: 100%;
+    padding: 60px 50px;
+}
+
+.article-edu-program .article-program__more-info hr
+{
+    margin: 50px 0;
+
+    border: 1px solid #dedede;
+}
+
+.article-edu-program .article-program__more-info .more-info__about
+{
+    justify-content: space-between;
+}
+
+.article-edu-program .more-info__close
+{
+    font-size: 0.75rem;
+    font-weight: 400;
+
     position: absolute;
     right: 50px;
+    bottom: 35px;
+
+    color: #999;
+    background: 0;
+}
+
+.article-edu-program .more-info__coast span
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    margin-right: 28px;
+
+    color: #444;
+}
+
+.article-edu-program .more-info__button
+{
+    justify-content: center;
+}
+
+.article-edu-program .more-info__section
+{
+    justify-content: space-between;
+}
+
+.article-edu-program .more-info__section .left-side
+{
+    width: calc(100% - 560px);
+}
+
+.article-edu-program .more-info__section h4
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    margin-bottom: 20px;
+
+    color: #444;
+}
+
+.article-edu-program .more-info__section p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    color: #444;
+}
+
+.article-edu-program .more-info__section p strong
+{
+    font-weight: 700;
+}
+
+.article-edu-program .more-info__section .right-side-list
+{
+    max-width: 560px;
+}
+
+.article-edu-program .more-info__section .right-side-list__item
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    color: #444;
+}
+
+.article-edu-program .more-info__section .right-side-list__item span
+{
+    margin-left: 5px;
+}
+
+.article-edu-program .more-list__item
+{
+    margin-bottom: 12px;
+}
+
+.article-edu-program .more-list__item p
+{
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: #444;
+}
+
+.article-edu-program .more-list__item p strong
+{
+    font-weight: 700;
 }
 
 .section--education-formats

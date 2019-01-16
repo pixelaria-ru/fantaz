@@ -1,27 +1,28 @@
 include mixins.pug
 header.header
-  .header__up-line.flex.container
-    .logotype.flex
-      img(src="images/logotype.png" alt='')
-      span Тренинг-центр Фантаз
-    .header__info
-      a(href='mailto:info@bisnes-trener.ru').link.link--mail info@bisnes-trener.ru
-      a(href='tel:89219043676').link.link--tel 
-        span 8 (921) 
-        | 904-36-76
-      a(href='#').link.link--button записаться
+  .header__up-line
+    .flex.container
+      .logotype.flex
+        img(src="images/logotype.png" alt='')
+        span Тренинг-центр Фантаз
+      .header__info
+        a(href='mailto:info@bisnes-trener.ru').link.link--mail info@bisnes-trener.ru
+        a(href='tel:89219043676').link.link--tel 
+          span 8 (921) 
+          | 904-36-76
+        a(href='#').link.link--button.zap записаться
   nav.header__nav
     ul.header-list.flex.container
       li.header-list__item
-        a(href='#') Программы
+        a(href='#programs') Программы
       li.header-list__item
-        a(href='#') Форматы обучения
+        a(href='#programs') Форматы обучения
       li.header-list__item
-        a(href='#') Результаты
+        a(href='#results') Результаты
       li.header-list__item
-        a(href='#') О нас
+        a(href='#about') О нас
       li.header-list__item
-        a(href='#') Кейсы
+        a(href='#projects') Кейсы
       li.header-list__item
-        a(href='#') Статьи
+        a(href='#news') Статьи
     

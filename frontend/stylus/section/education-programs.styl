@@ -28,11 +28,28 @@
 
 
 .article-edu-program
-  box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
   background-color #fff
-  align-items center
-  position relative
-  margin-bottom 20px
+  margin-bottom 30px
+  box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+  height 100px
+  overflow hidden
+  transition .55s
+  &.active
+    height max-content
+    .article-program__info
+      background-color #56b3ca
+      .button
+        background 0
+        border-color #fff
+    h3
+      color #fff
+  .article-program__info
+    align-items center
+    position relative
+    .button
+      position absolute
+      right 50px
+      min-width 170px
   &:last-child
     margin-bottom 0
   img
@@ -43,6 +60,66 @@
     margin-left 40px
     font-size 30px
     font-weight 400
-  .button
-    position absolute
-    right 50px
+
+
+  .article-program__more-info
+    width 100%
+    padding 60px 50px
+    position relative
+    hr
+      border 1px solid #dedede
+      margin 50px 0
+    .more-info__about
+      justify-content space-between
+  .more-info
+    &__close
+      color #999999
+      font-size 12px
+      font-weight 400
+      position absolute
+      right 50px
+      bottom 35px
+      background 0
+    &__coast
+      span
+        color #444444
+        font-size 24px
+        font-weight 400
+        margin-right 28px
+    &__button
+      justify-content center
+    &__section
+      justify-content space-between
+      .left-side
+        width calc(100% - 560px)
+      h4
+        color #444444
+        margin-bottom 20px
+        font-size 24px
+        font-weight 400
+        line-height 32px
+      p
+        color #444444
+        font-size 16px
+        font-weight 400
+        line-height 28px
+        strong
+          font-weight 700
+      .right-side-list
+        max-width 560px
+        &__item
+          color #444444
+          font-size 16px
+          font-weight 400
+          line-height 28px
+          span
+            margin-left 5px
+  .more-list
+    &__item
+      margin-bottom 12px
+      p
+        color #444444
+        font-size 16px
+        font-weight 400
+        strong
+          font-weight 700
