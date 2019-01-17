@@ -258,9 +258,10 @@
     max-height: 50px;
 }
 
-.logotype span
+.logotype h6
 {
     font-size: 1.125rem;
+    font-weight: normal;
 
     margin-left: 17px;
 
@@ -1261,4 +1262,470 @@ input[type='submit'] + label
     line-height: 1.75rem;
 
     color: #444;
+}
+
+@media (min-width: 768px) and (max-width: 1280px)
+{
+    .logotype span
+    {
+        display: none;
+    }
+
+    .section--education-programs
+    {
+        padding: 80px 20px;
+    }
+
+    .section--education-programs .for-whom
+    {
+        height: 290px;
+        padding: 40px;
+    }
+
+    .section--education-programs .for-whom .button
+    {
+        margin-right: 5px;
+    }
+
+    .section--education-programs .for-whom h6
+    {
+        min-width: calc(78px + 30px);
+        margin-right: 30px;
+        padding-right: 30px;
+    }
+
+    .article-edu-program h3
+    {
+        overflow: hidden;
+
+        width: 420px;
+        height: 30px;
+    }
+
+    .article-edu-program .article-program__info .button
+    {
+        right: 10px;
+
+        min-width: 130px;
+    }
+
+    .article-edu-program .article-program__info .button span
+    {
+        display: none;
+    }
+
+    .section--education-formats
+    {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 60px;
+    }
+
+    .section--education-formats h2
+    {
+        text-align: center;
+    }
+
+    .section--education-formats .container
+    {
+        flex-direction: column;
+
+        padding: 0;
+    }
+
+    .section--education-formats .right-side
+    {
+        justify-content: center;
+    }
+
+    .section--education-results
+    {
+        padding: 0;
+    }
+
+    .section--about
+    {
+        padding: 60px 20px 0;
+    }
+
+    .section--about .right-side
+    {
+        margin-left: 30px;
+    }
+
+    .section--about .about-tab
+    {
+        align-items: flex-start;
+    }
+
+    .section--about .about-tab img
+    {
+        max-width: 200px;
+        max-height: 270px;
+    }
+
+    .section--news article:nth-child(even)
+    {
+        display: none;
+    }
+
+    .section--completed-projects
+    {
+        padding: 40px 20px 140px;
+    }
+
+    .section--completed-projects .complete-project
+    {
+        margin: 18px;
+    }
+
+    .section--completed-projects h2
+    {
+        margin-right: 15px;
+        padding-right: 25px;
+    }
+
+    .section--our-clients
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        padding: 0 40px;
+    }
+
+    .link--mail
+    {
+        display: none;
+    }
+
+    .section--initial
+    {
+        overflow: hidden;
+    }
+
+    .section--initial:after,
+    .section--initial:before
+    {
+        display: none;
+    }
+
+    .section--initial .container:after
+    {
+        left: 440px;
+    }
+
+    .section--initial .container:before
+    {
+        left: 480px;
+    }
+
+    .section--education-formats
+    {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 60px;
+    }
+
+    .section--education-formats h2
+    {
+        text-align: center;
+    }
+
+    .section--education-formats .container
+    {
+        flex-direction: column;
+
+        padding: 0;
+    }
+
+    .section--education-formats .right-side
+    {
+        justify-content: center;
+    }
+
+    .section--news article:nth-child(even)
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px)
+{
+    .container
+    {
+        padding: 0 10px;
+    }
+
+    .header
+    {
+        overflow: hidden;
+    }
+
+    .header__nav
+    {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+
+        background: #5b5b5b;
+    }
+
+    .section--initial
+    {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+    }
+
+    .section--initial .container
+    {
+        padding: 0;
+    }
+
+    .section--initial .initial-info
+    {
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin-bottom: 85px;
+        margin-left: 0;
+        padding: 60px 15px 60px 20px;
+    }
+
+    .section--initial .initial-info a:after
+    {
+        bottom: -8px;
+        left: 0;
+    }
+
+    .section--initial .initial-info a:before
+    {
+        display: none;
+    }
+
+    .section--initial h1
+    {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
+
+    .section--initial p
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .link--tel
+    {
+        display: none;
+    }
+
+    .logotype h6
+    {
+        display: none;
+    }
+
+    .section--education-formats
+    {
+        padding: 40px 20px;
+    }
+
+    .section--education-formats .right-side
+    {
+        justify-content: flex-start;
+    }
+
+    .section--education-formats .right-side .education-form
+    {
+        margin-right: 0;
+    }
+
+    .section--education-formats .right-side h3
+    {
+        font-size: 1rem;
+        font-weight: 400;
+
+        max-width: 100%;
+    }
+
+    .section--education-formats h2
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+    }
+
+    .section--education-formats p
+    {
+        text-align: center;
+    }
+
+    .section--news
+    {
+        padding: 20px;
+    }
+
+    .section--news .article-news
+    {
+        margin-right: 0;
+    }
+
+    .section--news .article-news img
+    {
+        display: none;
+    }
+
+    .section--news .article-news .info
+    {
+        margin-left: 0;
+    }
+
+    .section--education-results
+    {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 0;
+    }
+
+    .section--education-results:after
+    {
+        display: none;
+    }
+
+    .section--education-results .info
+    {
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 40px 20px;
+    }
+
+    .section--education-results .info h2
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+
+        text-align: center;
+    }
+
+    .section--education-results .info .result-item p
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section--education-results .info .result-item__img
+    {
+        display: none;
+    }
+
+    .section--education-results .info:after
+    {
+        display: none;
+    }
+
+    .section--education-results .section__img
+    {
+        display: none;
+    }
+
+    .section--our-clients
+    {
+        overflow: hidden;
+    }
+
+    .section--about
+    {
+        padding: 50px 20px;
+    }
+
+    .section--about h2
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+
+        margin-bottom: 33px;
+    }
+
+    .section--about .right-side
+    {
+        margin-left: 0;
+    }
+
+    .section--about .select-tabs
+    {
+        display: none;
+    }
+
+    .section--about .about-tab
+    {
+        flex-direction: column;
+    }
+
+    .section--about .about-tab img
+    {
+        margin-bottom: 40px;
+    }
+
+    .section--education-programs
+    {
+        padding: 40px 10px;
+    }
+
+    .section--education-programs .for-whom
+    {
+        display: none;
+    }
+
+    .section--education-programs h2
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+
+        margin-bottom: 35px;
+    }
+
+    .section--education-programs .article-edu-program
+    {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .section--education-programs .article-edu-program img
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .section--education-programs .article-edu-program h3
+    {
+        font-size: 1rem;
+        font-weight: 400;
+
+        margin-left: 10px;
+    }
+
+    .section--education-programs .article-edu-program button
+    {
+        display: none;
+    }
+
+    .section--completed-projects
+    {
+        display: none;
+    }
 }
