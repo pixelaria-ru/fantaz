@@ -2063,6 +2063,74 @@ input[type='submit'] + label
 
 @media (max-width: 768px)
 {
+    .page .individual-education
+    {
+        margin-bottom: 80px;
+    }
+
+    .page .individual-education:before
+    {
+        height: 1482px;
+    }
+
+    .page .individual-education .individual-blocks
+    {
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .page .individual-education .individual-block
+    {
+        margin-right: 0;
+        margin-bottom: 55px;
+    }
+
+    .page .individual-education .individual-block:after
+    {
+        top: auto;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+    }
+
+    .page .education-blocks
+    {
+        padding: 80px 40px;
+    }
+
+    .page .education-blocks .edu-blocks
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .page .education-blocks .edu-blocks .edu-block
+    {
+        margin-bottom: 30px;
+    }
+
+    .page .initial-acreen__info
+    {
+        padding-top: 100px;
+    }
+
+    .page .initial-acreen__formats
+    {
+        margin-top: 35px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page .initial-acreen__formats .format-edu:first-child
+    {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
     .container
     {
         padding: 0 40px;
@@ -2127,6 +2195,136 @@ input[type='submit'] + label
 
 @media (min-width: 320px) and (max-width: 767px)
 {
+    .page .individual-education
+    {
+        margin-bottom: 80px;
+    }
+
+    .page .individual-education h2
+    {
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 3rem;
+
+        color: #fff;
+    }
+
+    .page .individual-education:before
+    {
+        height: 1590px;
+    }
+
+    .page .individual-education .individual-blocks
+    {
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .page .individual-education .individual-block
+    {
+        border: 0;
+    }
+
+    .page .individual-education .individual-block.white-block
+    {
+        background: 0;
+        box-shadow: none;
+    }
+
+    .page .individual-education .individual-block.white-block h3
+    {
+        color: #fff;
+    }
+
+    .page .individual-education .individual-block.white-block .individual-block__item p
+    {
+        color: #fff;
+    }
+
+    .page .individual-education .individual-block.white-block .individual-block__item:first-child .item__img
+    {
+        background: 0;
+    }
+
+    .page .individual-education .individual-block.white-block .individual-block__item:nth-child(2) .item__img
+    {
+        background: 0;
+    }
+
+    .page .individual-education .individual-block.white-block .individual-block__item:nth-child(3) .item__img
+    {
+        background: 0;
+    }
+
+    .page .individual-education .individual-block:after
+    {
+        top: auto;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+    }
+
+    .page .education-blocks
+    {
+        padding: 80px 20px;
+    }
+
+    .page .education-blocks .edu-blocks .edu-block
+    {
+        max-width: 280px;
+        margin-right: 0;
+    }
+
+    .page .education-blocks .edu-blocks .edu-block__header
+    {
+        width: 280px;
+    }
+
+    .page .initial-acreen__info
+    {
+        padding: 40px 20px 0;
+    }
+
+    .page .initial-acreen__info p
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.25rem;
+
+        text-align: left;
+
+        color: #444;
+    }
+
+    .page .initial-acreen .format-edu__img
+    {
+        display: none;
+    }
+
+    .page .initial-acreen .format-edu__info
+    {
+        margin-left: 20px;
+    }
+
+    .page .initial-acreen h1
+    {
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 3rem;
+
+        text-align: left;
+
+        color: #444;
+    }
+
+    .section--timetable,
+    .section--opinions
+    {
+        display: none;
+    }
+
     .container
     {
         padding: 0 10px;
