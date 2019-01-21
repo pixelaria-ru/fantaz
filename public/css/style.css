@@ -171,6 +171,17 @@
     color: #ea6969;
 }
 
+.non,
+.helpel-text
+{
+    display: none;
+}
+
+.vis
+{
+    display: block;
+}
+
 .header
 {
     position: absolute;
@@ -1831,6 +1842,99 @@ input[type='submit'] + label
 
 @media (min-width: 768px) and (max-width: 1280px)
 {
+    .page .initial-acreen__info
+    {
+        padding-top: 100px;
+    }
+
+    .page .initial-acreen__formats
+    {
+        margin-top: 35px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page .initial-acreen__formats .format-edu:first-child
+    {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .page .education-blocks
+    {
+        padding: 80px 40px;
+    }
+
+    .page .education-blocks .edu-blocks
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .page .education-blocks .edu-blocks .edu-block
+    {
+        margin-bottom: 30px;
+    }
+
+    .page .individual-education
+    {
+        margin-bottom: 80px;
+    }
+
+    .page .individual-education:before
+    {
+        height: 1482px;
+    }
+
+    .page .individual-education .individual-blocks
+    {
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .page .individual-education .individual-block
+    {
+        margin-right: 0;
+        margin-bottom: 55px;
+    }
+
+    .page .individual-education .individual-block:after
+    {
+        top: auto;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+    }
+
+    .page .section--opinions
+    {
+        padding: 80px 40px;
+    }
+
+    .page .section--timetable
+    {
+        padding: 80px 20px;
+    }
+
+    .page .section--timetable .non
+    {
+        display: block;
+    }
+
+    .page .section--timetable .vis
+    {
+        display: none;
+    }
+
+    .page .section--timetable .timetable-item h3
+    {
+        max-width: 300px;
+    }
+
     .logotype span
     {
         display: none;
