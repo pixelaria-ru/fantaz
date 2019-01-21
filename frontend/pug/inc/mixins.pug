@@ -162,3 +162,20 @@ mixin article-news
         h3 ЗАГОЛОВОК НОВОСТИ
         p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
         
+mixin timetable-item
+  li.timetable-item.flex
+    h3 Название мероприятия, вебинара, встречи
+    .wrap.flex
+      .timetable-item__date.flex
+        .icon
+        span 24.01
+      .timetable-item__time.flex
+        .icon
+        span 18:00
+    .wrap.flex
+      .timetable-item__price.flex
+        .icon
+        span 12000 Р.
+      button.button.button--pink зарегистрироваться
+    
+    

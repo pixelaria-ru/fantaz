@@ -1,0 +1,280 @@
+.page
+  .initial-acreen
+    position relative
+    height 570px
+    flex-direction column
+    align-items center
+    img
+      position absolute
+    &__info
+      position relative
+      padding-top 170px
+      h1
+        color #444444
+        text-align center
+        font-size 48px
+        font-weight 400
+        line-height 58px
+        margin-bottom 10px
+      p
+        color #444444
+        text-align center
+        font-size 36px
+        font-weight 400
+        line-height 48px
+    &__formats
+      position relative
+      margin-top 75px
+    .format-edu
+        &:first-child
+          margin-right 40px
+        &__img
+          width 60px
+          height 60px
+          background-color #56b3ca
+          justify-content center
+          border-radius 50%
+          align-items center
+          &.img--red
+            background-color #ea6969
+          img
+            max-width 34px
+            max-height 34px
+        &__info
+          max-width 350px
+          margin-left 30px
+          h3
+            color #444444
+            font-size 24px
+            font-weight 400
+            margin-bottom 10px
+          p
+            color #444444
+            font-size 18px
+            font-weight 400
+            line-height 21px
+  .education-blocks
+    padding 80px 85px
+    .edu-blocks
+      justify-content center
+    .edu-block
+      height max-content
+      max-width 210px
+      margin-right 15px
+      box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+      &:nth-child(even)
+        .edu-block__header
+          background-color #488999
+      &:last-child
+        margin-right 0
+      &__header
+        width 210px
+        display flex
+        align-items center
+        text-align center
+        justify-content center
+        height 92px
+        background-color #69d1ea
+        padding 0 25px
+        h3
+          color #ffffff
+          font-size 18px
+          font-weight 700
+          line-height 22px
+      &__lsit
+        padding 0 20px
+      &__item
+        padding 15px 0
+        border-bottom 1px solid #dedede
+        &:last-child
+          border-bottom 0
+        span
+          color #444444
+          font-size 16px
+          font-weight 400
+          line-height 22px
+
+    h2
+      color #444444
+      text-align center
+      margin-bottom 70px
+      font-size 36px
+      font-weight 400
+      line-height 48px
+  .individual-education
+    padding 90px 0
+    position relative
+    overflow hidden
+    &:before
+      content ''
+      width 100%
+      background-image linear-gradient(-52deg, #3fa3bb 0%, #52cae8 50%, #54bed9 75%, #54bed8 76%, #54bdd7 78%, #56b3ca 100%)
+      height 800px
+      transform skewY(4deg)
+      position absolute
+      z-index -1
+
+    h2
+      color #ffffff
+      font-size 36px
+      text-align center
+      font-weight 400
+      margin-top 125px
+      margin-bottom 50px
+      line-height 24px
+    &__text
+      color #ffffff
+      font-family "Circe - Regular"
+      font-size 16px
+      font-weight 400
+      text-decoration underline
+      text-align center
+      margin-top 55px
+    .individual-blocks
+      justify-content center
+    .individual-block
+      width 330px
+      position relative
+      border 1px solid #ffffff
+      margin-right 55px
+      padding 30px
+      &:last-child
+        &:after
+          display none
+      &:after
+        content ''
+        width 20px
+        height 20px
+        top 0
+        bottom 0
+        margin auto
+        right -40px
+        position absolute
+        background url('../images/plus.png')
+      &.white-block
+        box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+        background-color #ffffff
+        h3
+          color #444444
+        .individual-block__item
+          &:nth-child(1)
+            .item__img
+              background-color #56b3ca
+          &:nth-child(2)
+            .item__img
+              background-color #69d1ea
+          &:nth-child(3)
+            .item__img
+              background-color #ea6969
+          p
+            color #444444
+      &__item
+        align-itams center
+        margin-top 20px
+      .item__img
+        width 40px
+        height 40px
+        border 1px solid #ffffff
+        margin-right 15px
+        border-radius 50%
+        display flex
+        align-items center
+        justify-content center
+        img
+          max-width max-content
+          max-height max-content
+      p
+        width calc(100% - 55px)
+        color #ffffff
+        font-size 16px
+        font-weight 400
+      h3
+        color #ffffff
+        text-align center
+        font-size 24px
+        font-weight 400
+        line-height 32px
+      &:last-child
+        margin-right 0
+  .section--timetable
+      justify-content center
+      flex-direction column
+      align-items center
+      padding 80px 85px
+      .timetable__list
+        width 100%
+        margin-top 30px
+      .timetable-item
+        padding 40px 0
+        border-bottom 1px solid #dedede
+        justify-content space-between
+        align-items center
+        &:last-child
+          border-bottom 0
+          margin-bottom 50px
+        .flex
+          align-items center
+        .button
+          margin-right 0
+          margin-bottom 0
+        .timetable-item__date
+          margin-right 40px
+          .icon
+            background url('../images/calendar-4.png')
+            width 20px
+            height 20px
+            margin-right 10px
+          span
+            color #444444
+            font-size 16px
+            font-weight 400
+            line-height 28px
+        .timetable-item__time
+          .icon
+            background url('../images/alarm-clock.png')
+            width 20px
+            height 20px
+            margin-right 10px
+          span
+            color #444444
+            font-size 16px
+            font-weight 400
+            line-height 28px
+        .timetable-item__price
+          margin-right 25px
+          .icon
+            background url('../images/price-tag-2.png')
+            width 20px
+            height 20px
+            margin-right 10px
+          span
+            color #444444
+            font-size 16px
+            font-weight 400
+            line-height 28px
+        h3
+          color #56b3ca
+          font-size 24px
+          font-weight 700
+          line-height 28px
+  .section--opinions
+    padding 80px 85px
+    .article-opinion
+      max-width 1110px
+      box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+      border-radius 8px
+      background-color #ffffff
+      margin-top 70px
+      img
+        max-height 200px
+      .info
+        padding 50px
+        p,li
+          color #444444
+          font-size 16px
+          font-weight 400
+          line-height 28px
+        p,ul,ol
+          margin-bottom 30px
+  .section--our-clients
+    padding 0px 85px 80px
