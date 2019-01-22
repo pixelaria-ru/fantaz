@@ -264,7 +264,16 @@
     font-size: 1.125rem;
     font-weight: 400;
 
+    padding-bottom: 1px;
+
     color: #505050;
+    border-bottom: 1px solid transparent;
+}
+
+.link--mail:hover,
+.link--mail:focus
+{
+    border-bottom: 1px solid #505050;
 }
 
 .link--tel
@@ -681,12 +690,25 @@ input[type='submit'] + label
 {
     font: 400 1rem 'Circe - Regular';
 
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
+
+    width: max-content;
+    margin: auto;
     margin-top: 55px;
+    padding-bottom: 3px;
 
     text-align: center;
-    text-decoration: underline;
 
     color: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.page .individual-education__text:hover,
+.page .individual-education__text:focus
+{
+    border-bottom: 1px solid #fff;
 }
 
 .page .individual-education .individual-blocks
