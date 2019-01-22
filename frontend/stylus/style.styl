@@ -54,10 +54,10 @@
   right 0
   margin auto
   background rgba(0, 0, 0, 0.15)
-  transition .55s
+  transition opacity .55s
   cursor pointer
   &.active
-    z-index 99
+    z-index 100
     opacity 1
     .main-form
       position absolute
@@ -109,10 +109,12 @@
   display inline-block
   width 100%
   text-decoration underline
-.non,.helpel-text
+.non
   display none
 .vis
   display block
+.zap
+  cursor pointer
 @import 'inc/header.styl'
 @import 'inc/footer.styl'
 @import 'inc/reset.styl'

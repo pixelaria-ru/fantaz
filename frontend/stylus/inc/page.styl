@@ -265,6 +265,10 @@
       border-radius 8px
       background-color #ffffff
       margin-top 70px
+      display none
+      padding-bottom 50px
+      &.active
+        display block
       img
         max-height 200px
       .info
@@ -276,5 +280,21 @@
           line-height 28px
         p,ul,ol
           margin-bottom 30px
+    .dots
+      justify-content center
+      margin-top -60px
+      span
+        display block
+        border-radius 50%
+        cursor pointer
+        width 16px
+        height 16px
+        box-shadow inset 0 1px 10px rgba(188, 188, 188, 0.3)
+        background-color #dedede
+        margin-right 15px
+        &.active
+          background-color #56b3ca
+        &:last-child
+          margin-right 0
   .section--our-clients
     padding 0px 85px 80px
