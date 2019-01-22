@@ -4,7 +4,7 @@
     margin-bottom 60px
 
   .about-tab
-    align-items center
+    align-items flex-start
     img
       max-width 270px
       max-height 365px
@@ -16,6 +16,10 @@
       margin-bottom 17px
   .right-side
     margin-left 50px
+  .tabus
+    display none
+    &.active
+      display block
   .select-tabs
     border-bottom 1px solid #56b3ca
     max-width 550px
@@ -24,6 +28,7 @@
     span
       color #999999
       margin-right 40px
+      cursor pointer
       font-size 24px
       font-weight 400
       line-height 28px

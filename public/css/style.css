@@ -80,10 +80,34 @@
     background: #ea6969;
 }
 
-.main-form
+.modalia
 {
     position: fixed;
     z-index: -9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+
+    cursor: pointer;
+    transition: .55s;
+
+    opacity: 0;
+    background: rgba(0,0,0,.15);
+}
+
+.modalia.active
+{
+    z-index: 99;
+
+    opacity: 1;
+}
+
+.modalia.active .main-form
+{
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -95,9 +119,6 @@
     height: 535px;
     margin: auto;
 
-    transition: .55s;
-
-    opacity: 0;
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 10px 16px rgba(227,231,235,.5), 0 0 4px rgba(0,0,0,.1);
@@ -106,19 +127,12 @@
     align-items: center;
 }
 
-.main-form.active
-{
-    z-index: 99;
-
-    opacity: 1;
-}
-
-.main-form button
+.modalia.active .main-form button
 {
     width: 400px;
 }
 
-.main-form p
+.modalia.active .main-form p
 {
     font-size: 0.875rem;
     font-weight: 400;
@@ -129,7 +143,7 @@
     color: #646464;
 }
 
-.main-form textarea
+.modalia.active .main-form textarea
 {
     width: 400px;
     height: 120px;
@@ -139,7 +153,7 @@
     background: #f9f9f9;
 }
 
-.main-form input
+.modalia.active .main-form input
 {
     font-size: 1rem;
     font-weight: 400;
@@ -210,6 +224,8 @@
     position: fixed;
     z-index: 9999;
     top: 0;
+
+    box-shadow: 0 0 12px rgba(0,0,0,.12);
 }
 
 .header__nav
@@ -231,8 +247,6 @@
 {
     font-size: 1.125rem;
     font-weight: 400;
-
-    text-decoration: underline;
 
     color: #505050;
 }
@@ -264,6 +278,7 @@
     color: #488999;
     border: 1px solid #488999;
     border-radius: 30px;
+    background: 0;
 }
 
 .link--button:hover,
@@ -296,6 +311,7 @@
 
 .header-list__item
 {
+    margin-top: 1px;
     margin-right: 30px;
 }
 
@@ -1241,7 +1257,7 @@ input[type='submit'] + label
     overflow: hidden;
 
     height: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     transition: .55s;
 
@@ -1518,10 +1534,19 @@ input[type='submit'] + label
 
 .section--our-clients img
 {
+    display: none;
+
     max-width: -webkit-max-content;
+
     max-width: -moz-max-content;
+
     max-width: max-content;
     margin-right: 30px;
+}
+
+.section--our-clients img.active
+{
+    display: block;
 }
 
 .section--our-clients img:last-child
@@ -1542,6 +1567,32 @@ input[type='submit'] + label
 
     color: #444;
     border-left: 1px solid #dedede;
+}
+
+.slider-buttons
+{
+    flex-direction: column;
+}
+
+.slider-buttons .buta
+{
+    display: block;
+
+    width: 10px;
+    height: 18px;
+
+    background: url('../images/down-arrow.png');
+}
+
+.slider-buttons .buta:first-child
+{
+    margin-bottom: 16px;
+}
+
+.slider-buttons .but-next
+{
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
 }
 
 .section--education-results
@@ -1672,7 +1723,7 @@ input[type='submit'] + label
 
 .section--about .about-tab
 {
-    align-items: center;
+    align-items: flex-start;
 }
 
 .section--about .about-tab img
@@ -1697,6 +1748,16 @@ input[type='submit'] + label
     margin-left: 50px;
 }
 
+.section--about .tabus
+{
+    display: none;
+}
+
+.section--about .tabus.active
+{
+    display: block;
+}
+
 .section--about .select-tabs
 {
     max-width: 550px;
@@ -1713,6 +1774,8 @@ input[type='submit'] + label
     line-height: 1.75rem;
 
     margin-right: 40px;
+
+    cursor: pointer;
 
     color: #999;
 }
@@ -1954,6 +2017,7 @@ input[type='submit'] + label
     .section--education-programs .for-whom .button
     {
         margin-right: 5px;
+        padding: 17px 20px;
     }
 
     .section--education-programs .for-whom h6
@@ -1961,6 +2025,27 @@ input[type='submit'] + label
         min-width: calc(78px + 30px);
         margin-right: 30px;
         padding-right: 30px;
+    }
+
+    .section--initial
+    {
+        overflow: hidden;
+    }
+
+    .section--initial:after,
+    .section--initial:before
+    {
+        display: none;
+    }
+
+    .section--initial .container:after
+    {
+        left: 440px;
+    }
+
+    .section--initial .container:before
+    {
+        left: 480px;
     }
 
     .article-edu-program h3

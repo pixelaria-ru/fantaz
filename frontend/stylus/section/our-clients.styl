@@ -4,6 +4,9 @@
   img
     max-width max-content
     margin-right 30px
+    display none
+    &.active
+      display block
     &:last-child
       margin-right 0
   h2
@@ -16,3 +19,16 @@
     margin-left 35px
     line-height 140px
     min-width calc(127px + 50px)
+
+.slider-buttons
+  flex-direction column
+
+  .buta
+    background url('../images/down-arrow.png')
+    width 10px
+    height 18px
+    display block
+    &:first-child
+      margin-bottom 16px
+  .but-next
+    transform rotate(-180deg)
