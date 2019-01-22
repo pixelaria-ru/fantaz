@@ -200,13 +200,15 @@
     cursor: pointer;
 }
 
-.hr-her
+.hr-xer
 {
-    width: 1280px;
-    height: 1px;
+    max-width: 1280px;
+    height: 2px;
+    margin: auto;
 
+    border: 0;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.05);
+    box-shadow: 0 5px 5px rgba(0,0,0,.05);
 }
 
 .header
@@ -1316,7 +1318,6 @@ input[type='submit'] + label
 {
     overflow: hidden;
 
-    height: 100px;
     margin-bottom: 20px;
 
     transition: .55s;
@@ -1330,6 +1331,11 @@ input[type='submit'] + label
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+}
+
+.article-edu-program.active .article-program__more-info
+{
+    display: block;
 }
 
 .article-edu-program.active .article-program__info
@@ -1389,6 +1395,8 @@ input[type='submit'] + label
 .article-edu-program .article-program__more-info
 {
     position: relative;
+
+    display: none;
 
     width: 100%;
     padding: 60px 50px;
