@@ -200,6 +200,15 @@
     cursor: pointer;
 }
 
+.hr-her
+{
+    width: 1280px;
+    height: 1px;
+
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.05);
+}
+
 .header
 {
     position: absolute;
@@ -1275,12 +1284,18 @@ input[type='submit'] + label
 {
     height: 220px;
     margin-bottom: 50px;
-    padding: 50px;
+    padding: 50px 0 50px 50px;
 
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 
     align-items: center;
+}
+
+.section--education-programs .for-whom .filter-buttons .button
+{
+    margin-right: 10px;
+    padding: 17px 25px;
 }
 
 .section--education-programs .for-whom h6
@@ -1336,6 +1351,8 @@ input[type='submit'] + label
 .article-edu-program .article-program__info
 {
     position: relative;
+
+    height: 100px;
 
     align-items: center;
 }
