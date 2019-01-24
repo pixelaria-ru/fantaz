@@ -1,0 +1,21 @@
+doctype html
+html(lang='ru')
+  head
+    meta(name='robots' content='none')
+    meta( charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    link( rel='stylesheet' href='css/style.min.css')
+    title Главная
+  body
+    include inc/header.pug
+    main.main.category-news
+      h2 Новости и статьи
+      section.section.section--news.flex.container#news
+        +article-news
+        +article-news
+        +article-news
+        +article-news
+        +article-news
+        +article-news
+
+    include inc/footer.pug

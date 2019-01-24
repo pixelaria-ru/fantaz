@@ -1995,6 +1995,44 @@ input[type='submit'] + label
     color: #444;
 }
 
+.category-news h2,
+.page-news h2
+{
+    font-size: 2.25rem;
+    font-weight: 400;
+
+    padding-top: 80px;
+
+    text-align: center;
+
+    color: #000;
+}
+
+.page-news-text
+{
+    margin-top: 70px;
+}
+
+.page-news-text img
+{
+    float: left;
+
+    width: 350px;
+    height: 230px;
+    margin-right: 40px;
+}
+
+.page-news-text p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    margin-bottom: 20px;
+
+    color: #444;
+}
+
 @media (min-width: 768px) and (max-width: 800px)
 {
     .page .initial-acreen__info
