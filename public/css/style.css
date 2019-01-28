@@ -80,6 +80,12 @@
     background: #ea6969;
 }
 
+.button--pink:hover,
+.button--pink:focus
+{
+    background: #ea5555;
+}
+
 .modalia
 {
     position: fixed;
@@ -294,9 +300,8 @@
     font-size: 1rem;
     font-weight: 400;
 
-    max-width: 138px;
     max-height: 50px;
-    padding: 15px 30px;
+    padding: 16px 30px 15px;
 
     transition: .33s;
 
@@ -1316,6 +1321,11 @@ input[type='submit'] + label
     align-items: center;
 }
 
+.section--education-programs .for-whom .filter-buttons
+{
+    margin-top: 20px;
+}
+
 .section--education-programs .for-whom .filter-buttons .button
 {
     margin-right: 10px;
@@ -1369,6 +1379,19 @@ input[type='submit'] + label
 {
     border-color: #fff;
     background: 0;
+}
+
+.article-edu-program.active .article-program__info .button:focus
+{
+    border-color: #fff;
+    background: 0;
+}
+
+.article-edu-program.active .article-program__info .button:hover
+{
+    color: #fff;
+    border-color: #ea6969;
+    background: #ea6969;
 }
 
 .article-edu-program.active h3
@@ -1453,6 +1476,8 @@ input[type='submit'] + label
 {
     font-size: 1.5rem;
     font-weight: 400;
+
+    display: none;
 
     margin-right: 28px;
 

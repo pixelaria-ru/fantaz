@@ -10,9 +10,29 @@ window.onscroll = function(){
 };
 
 
+(function(){
+  // pravochki
+  var buttonHeader = document.querySelector('.link--button'),
+  programs = document.querySelectorAll('.article-edu-program'),
+  programsLength = programs.length;
+
+  while(programsLength -= 1){
+    programs[programsLength].querySelector('.more-info__coast button').innerHTML = 'Оставить заявку'
+    programs[programsLength].querySelector('.more-info__button button').innerHTML = 'Оставить заявку'
+  }
+  programs[0].querySelector('.more-info__coast button').innerHTML = 'Оставить заявку'
+  programs[0].querySelector('.more-info__button button').innerHTML = 'Оставить заявку'
+
+  programs[programs.length - 1].querySelector('.article-program__info button').innerHTML = 'сформировать';
+  buttonHeader.innerHTML ='Связаться с нами';
+
+
+}());
+
+
 (function moreInfoProgram(){
   var program = document.querySelectorAll('.article-edu-program');
-  var programLength = document.querySelectorAll('.article-edu-program').length;
+  var programLength = document.querySelectorAll('.article-edu-program').length - 1;
   for(var i = 0; i < programLength; i++){
     program[i].querySelector('.article-program__info .button').addEventListener('click', function(){
       this.parentNode.parentNode.classList.toggle('active');
@@ -46,7 +66,7 @@ window.onscroll = function(){
       }
     })
   }
-}());
+});
 
 (function (){
   var zap = document.querySelectorAll('.zap');
