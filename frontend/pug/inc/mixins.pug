@@ -148,10 +148,10 @@ mixin article-edu-program(title,filter)
         button.button.button--pink.zap Заказать обучение сейчас 
       button.more-info__close Свернуть программу
       
-mixin education-form(title)
+mixin education-form(title,image)
   .education-form.flex
     .education-form__img.flex
-      img(src='images/open-book.png' alt='')
+      img(src=image alt='')
     h3= title
 
 mixin article-news

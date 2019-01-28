@@ -1,4 +1,23 @@
 @media(min-width 768px) and (max-width 800px)
+  .footer
+    padding 75px 20px 40px
+    .container
+      padding 0
+    .footer__down-left
+      .footer__down-left-item
+        &:nth-child(2)
+          span,a
+            &:after
+              border-right 0
+        &:last-child
+          display none
+    .footer-contacts
+      &__item
+        &:first-child
+          a
+            border-right 0
+        &:last-child
+          display none
   .page
     .initial-acreen
       &__info
@@ -121,6 +140,25 @@
   .section--our-clients
     display none
 @media(max-width 768px)
+  .footer
+    padding 75px 20px 40px
+    .container
+      padding 0
+    .footer__down-left
+      .footer__down-left-item
+        &:nth-child(2)
+          span,a
+            &:after
+              border-right 0
+        &:last-child
+          display none
+    .footer-contacts
+      &__item
+        &:first-child
+          a
+            border-right 0
+        &:last-child
+          display none
   .page
     .individual-education
       margin-bottom 80px
@@ -186,6 +224,35 @@
         display none
 
 @media(min-width 320px) and (max-width 767px)
+  .footer
+    padding 75px 20px 40px
+    hr
+      margin 30px 0
+    .container
+      padding 0
+      .footer-contacts__list
+        display none
+      &:first-child
+        justify-content center
+        ul
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+      &:last-child
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        ul
+          flex-direction: column
+          align-items: center
+          .footer__down-left-item
+            margin-bottom 10px
+            &:first-child
+              span
+                &:after
+                  display none
+
   .page
     .individual-education
       margin-bottom 80px

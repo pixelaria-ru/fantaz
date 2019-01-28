@@ -181,14 +181,28 @@
     font-size: 1rem;
     font-weight: 400;
 
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+
     display: inline-block;
 
-    width: 100%;
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
+
+    width: max-content;
+    padding-bottom: 2px;
 
     text-align: right;
-    text-decoration: underline;
 
     color: #ea6969;
+}
+
+.helpel-text:hover,
+.helpel-text:focus
+{
+    border-bottom: 1px solid #ea6969;
 }
 
 .non
@@ -374,9 +388,102 @@
 
 .footer
 {
-    height: 340px;
+    padding: 75px 85px 40px;
 
     background: #333;
+}
+
+.footer .container
+{
+    justify-content: space-between;
+}
+
+.footer hr
+{
+    max-width: 1110px;
+    height: 1px;
+    margin: 54px auto 40px;
+
+    border: 1px solid #979797;
+    background: #6e6e6e;
+}
+
+.footer .footer-menu__item
+{
+    margin-right: 15px;
+}
+
+.footer .footer-menu__item span,
+.footer .footer-menu__item a
+{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    color: #fff;
+}
+
+.footer .footer-contacts__item:first-child a
+{
+    margin-right: 10px;
+    padding-right: 10px;
+
+    border-right: 1px solid #fff;
+}
+
+.footer .footer-contacts__item a
+{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+
+    color: #fff;
+}
+
+.footer .footer__down-left .footer__down-left-item:last-child span:after,
+.footer .footer__down-left .footer__down-left-item:last-child a:after
+{
+    border-right: 0;
+}
+
+.footer .footer__down-left .footer__down-left-item span,
+.footer .footer__down-left .footer__down-left-item a
+{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+
+    color: #aeaeae;
+}
+
+.footer .footer__down-left .footer__down-left-item span:after,
+.footer .footer__down-left .footer__down-left-item a:after
+{
+    position: relative;
+    top: 2px;
+
+    display: inline-block;
+
+    height: 10px;
+    margin: 0 5px;
+
+    content: '';
+
+    border-right: 1px solid #aeaeae;
+}
+
+.footer .avtor
+{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+
+    color: #aeaeae;
+}
+
+.footer .avtor span
+{
+    color: #56b3ca;
 }
 
 *
@@ -729,6 +836,8 @@ input[type='submit'] + label
     margin-right: 55px;
     padding: 30px;
 
+    transition: .33s;
+
     border: 1px solid #fff;
 }
 
@@ -753,33 +862,39 @@ input[type='submit'] + label
     background: url('../images/plus.png');
 }
 
-.page .individual-education .individual-block.white-block
+.page .individual-education .individual-block:hover,
+.page .individual-education .individual-block:focus
 {
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
-.page .individual-education .individual-block.white-block h3
+.page .individual-education .individual-block:hover h3,
+.page .individual-education .individual-block:focus h3
 {
     color: #444;
 }
 
-.page .individual-education .individual-block.white-block .individual-block__item:nth-child(1) .item__img
+.page .individual-education .individual-block:hover .individual-block__item:nth-child(1) .item__img,
+.page .individual-education .individual-block:focus .individual-block__item:nth-child(1) .item__img
 {
     background: #56b3ca;
 }
 
-.page .individual-education .individual-block.white-block .individual-block__item:nth-child(2) .item__img
+.page .individual-education .individual-block:hover .individual-block__item:nth-child(2) .item__img,
+.page .individual-education .individual-block:focus .individual-block__item:nth-child(2) .item__img
 {
     background: #69d1ea;
 }
 
-.page .individual-education .individual-block.white-block .individual-block__item:nth-child(3) .item__img
+.page .individual-education .individual-block:hover .individual-block__item:nth-child(3) .item__img,
+.page .individual-education .individual-block:focus .individual-block__item:nth-child(3) .item__img
 {
     background: #ea6969;
 }
 
-.page .individual-education .individual-block.white-block .individual-block__item p
+.page .individual-education .individual-block:hover .individual-block__item p,
+.page .individual-education .individual-block:focus .individual-block__item p
 {
     color: #444;
 }
@@ -900,6 +1015,7 @@ input[type='submit'] + label
     margin-right: 10px;
 
     background: url('../images/calendar-4.png');
+    background-size: cover;
 }
 
 .page .section--timetable .timetable-item .timetable-item__date span
@@ -918,6 +1034,7 @@ input[type='submit'] + label
     margin-right: 10px;
 
     background: url('../images/alarm-clock.png');
+    background-size: cover;
 }
 
 .page .section--timetable .timetable-item .timetable-item__time span
@@ -941,6 +1058,7 @@ input[type='submit'] + label
     margin-right: 10px;
 
     background: url('../images/price-tag-2.png');
+    background-size: cover;
 }
 
 .page .section--timetable .timetable-item .timetable-item__price span
@@ -1332,6 +1450,14 @@ input[type='submit'] + label
     padding: 17px 25px;
 }
 
+.section--education-programs .for-whom .filter-buttons .button:hover,
+.section--education-programs .for-whom .filter-buttons .button:focus
+{
+    color: #777;
+    border-color: 0;
+    background: 0;
+}
+
 .section--education-programs .for-whom h6
 {
     font-size: 1.125rem;
@@ -1377,6 +1503,7 @@ input[type='submit'] + label
 
 .article-edu-program.active .article-program__info .button
 {
+    color: #fff;
     border-color: #fff;
     background: 0;
 }
@@ -1414,6 +1541,11 @@ input[type='submit'] + label
     right: 50px;
 
     min-width: 170px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: #ea6969;
+    background: 0;
 }
 
 .article-edu-program:last-child
@@ -1963,6 +2095,8 @@ input[type='submit'] + label
 
 .section--news
 {
+    position: relative;
+
     padding: 90px 85px;
 
     flex-wrap: wrap;
@@ -2060,6 +2194,37 @@ input[type='submit'] + label
 
 @media (min-width: 768px) and (max-width: 800px)
 {
+    .footer
+    {
+        padding: 75px 20px 40px;
+    }
+
+    .footer .container
+    {
+        padding: 0;
+    }
+
+    .footer .footer__down-left .footer__down-left-item:nth-child(2) span:after,
+    .footer .footer__down-left .footer__down-left-item:nth-child(2) a:after
+    {
+        border-right: 0;
+    }
+
+    .footer .footer__down-left .footer__down-left-item:last-child
+    {
+        display: none;
+    }
+
+    .footer .footer-contacts__item:first-child a
+    {
+        border-right: 0;
+    }
+
+    .footer .footer-contacts__item:last-child
+    {
+        display: none;
+    }
+
     .page .initial-acreen__info
     {
         padding-top: 100px;
@@ -2303,6 +2468,37 @@ input[type='submit'] + label
 
 @media (max-width: 768px)
 {
+    .footer
+    {
+        padding: 75px 20px 40px;
+    }
+
+    .footer .container
+    {
+        padding: 0;
+    }
+
+    .footer .footer__down-left .footer__down-left-item:nth-child(2) span:after,
+    .footer .footer__down-left .footer__down-left-item:nth-child(2) a:after
+    {
+        border-right: 0;
+    }
+
+    .footer .footer__down-left .footer__down-left-item:last-child
+    {
+        display: none;
+    }
+
+    .footer .footer-contacts__item:first-child a
+    {
+        border-right: 0;
+    }
+
+    .footer .footer-contacts__item:last-child
+    {
+        display: none;
+    }
+
     .page .individual-education
     {
         margin-bottom: 80px;
@@ -2435,6 +2631,64 @@ input[type='submit'] + label
 
 @media (min-width: 320px) and (max-width: 767px)
 {
+    .footer
+    {
+        padding: 75px 20px 40px;
+    }
+
+    .footer hr
+    {
+        margin: 30px 0;
+    }
+
+    .footer .container
+    {
+        padding: 0;
+    }
+
+    .footer .container .footer-contacts__list
+    {
+        display: none;
+    }
+
+    .footer .container:first-child
+    {
+        justify-content: center;
+    }
+
+    .footer .container:first-child ul
+    {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .container:last-child
+    {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .container:last-child ul
+    {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .footer .container:last-child ul .footer__down-left-item
+    {
+        margin-bottom: 10px;
+    }
+
+    .footer .container:last-child ul .footer__down-left-item:first-child span:after
+    {
+        display: none;
+    }
+
     .page .individual-education
     {
         margin-bottom: 80px;

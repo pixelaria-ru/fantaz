@@ -1,3 +1,60 @@
 .footer
-  height 340px
+
   background-color #333333
+  padding 75px 85px 40px
+  .container
+    justify-content space-between
+  hr
+    height 1px
+    border 1px solid #979797
+    background-color #6e6e6e
+    max-width 1110px
+    margin 54px auto 40px
+
+  .footer-menu
+    &__item
+      margin-right 15px
+      span,a
+        color #ffffff
+        font-size 14px
+        font-weight 400
+        line-height 28px
+  .footer-contacts
+    &__item
+      &:first-child
+        a
+          margin-right 10px
+          padding-right 10px
+          border-right 1px solid #fff
+      a
+        color #ffffff
+        font-size 14px
+        font-weight 400
+        line-height 14px
+
+  .footer__down-left
+    .footer__down-left-item
+      &:last-child
+        span,a
+          &:after
+            border-right 0
+      span,a
+        color #aeaeae
+        font-size 12px
+        font-weight 400
+        line-height 12px
+        &:after
+          display inline-block
+          position relative
+          top 2px
+          height 10px
+          margin 0 5px
+          content ""
+          border-right 1px solid #aeaeae
+  .avtor
+    font-size 12px
+    font-weight 400
+    line-height 20px
+    color #aeaeae
+    span
+      color #56b3ca
