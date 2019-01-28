@@ -14,16 +14,16 @@ window.onscroll = function(){
   // pravochki
   var buttonHeader = document.querySelector('.link--button'),
   programs = document.querySelectorAll('.article-edu-program'),
-  programsLength = programs.length - 1;
+  programsLength = programs.length;
 
   while(programsLength -= 1){
-    programs[programsLength].querySelector('.more-info__coast button').innerHTML = 'Оставить заявку'
-    programs[programsLength].querySelector('.more-info__button button').innerHTML = 'Оставить заявку'
+    programs[programsLength].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
+    programs[programsLength].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
   }
-  programs[0].querySelector('.more-info__coast button').innerHTML = 'Оставить заявку'
-  programs[0].querySelector('.more-info__button button').innerHTML = 'Оставить заявку'
+  programs[0].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
+  programs[0].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
 
-  programs[programs.length - 1].querySelector('.article-program__info button').innerHTML = 'сформировать';
+  programs[programs.length - 1].querySelector('.article-program__info .button').innerHTML = 'сформировать';
   buttonHeader.innerHTML ='Связаться с нами';
 
 
