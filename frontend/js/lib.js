@@ -9,125 +9,141 @@ window.onscroll = function(){
 
 };
 
+if(document.querySelector('.article-edu-program')){
+  (function(){
+    // pravochki
+    var
+    programs = document.querySelectorAll('.article-edu-program'),
+    programsLength = programs.length;
 
+    while(programsLength -= 1){
+      programs[programsLength].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
+      programs[programsLength].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
+    }
+    programs[0].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
+    programs[0].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
+
+    programs[programs.length - 1].querySelector('.article-program__info .button').innerHTML = 'сформировать';
+
+
+
+  }());
+}
 (function(){
   // pravochki
-  var buttonHeader = document.querySelector('.link--button'),
-  programs = document.querySelectorAll('.article-edu-program'),
-  programsLength = programs.length;
-
-  while(programsLength -= 1){
-    programs[programsLength].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
-    programs[programsLength].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
-  }
-  programs[0].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
-  programs[0].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
-
-  programs[programs.length - 1].querySelector('.article-program__info .button').innerHTML = 'сформировать';
+  var buttonHeader = document.querySelector('.link--button');
   buttonHeader.innerHTML ='Связаться с нами';
-
-
 }());
 
+if(document.querySelector('.article-edu-program')){
+  (function moreInfoProgram(){
+    var program = document.querySelectorAll('.article-edu-program');
+    var programLength = document.querySelectorAll('.article-edu-program').length - 1;
+    for(var i = 0; i < programLength; i++){
+      program[i].querySelector('.article-program__info .button').addEventListener('click', function(){
+        this.parentNode.parentNode.classList.toggle('active');
 
-(function moreInfoProgram(){
-  var program = document.querySelectorAll('.article-edu-program');
-  var programLength = document.querySelectorAll('.article-edu-program').length - 1;
-  for(var i = 0; i < programLength; i++){
-    program[i].querySelector('.article-program__info .button').addEventListener('click', function(){
-      this.parentNode.parentNode.classList.toggle('active');
-
-      if(this.parentNode.parentNode.classList.contains('active')){
-        this.innerHTML = 'свернуть';
-      }else{
-        this.innerHTML = 'описание курса';
-      }
-    })
-    program[i].querySelector('.more-info__close').addEventListener('click', function(){
-      this.parentNode.parentNode.classList.remove('active')
-    })
-  }
-}());
-
-(function filterProgram(){
-  var filterButtons = document.querySelectorAll('.filter-buttons button');
-  var filterButtonsLength = document.querySelectorAll('.filter-buttons button').length;
-  var program = document.querySelectorAll('.article-edu-program');
-
-  for(var i = 0; i < filterButtonsLength; i++){
-    filterButtons[i].addEventListener('click', function(i){
-      this.classList.toggle('active');
-      for(var i = 0; i < program.length; i++){
-        if(program[i].getAttribute('date-filter') !== this.innerHTML){
-          program[i].style.display = 'none'
+        if(this.parentNode.parentNode.classList.contains('active')){
+          this.innerHTML = 'свернуть';
         }else{
-          program[i].style.display = ''
+          this.innerHTML = 'описание курса';
         }
-      }
+      })
+      program[i].querySelector('.more-info__close').addEventListener('click', function(){
+        this.parentNode.parentNode.classList.remove('active')
+      })
+    }
+  }());
+}
+
+if(document.querySelector('.filter-buttons button')){
+  (function filterProgram(){
+    var filterButtons = document.querySelectorAll('.filter-buttons button');
+    var filterButtonsLength = document.querySelectorAll('.filter-buttons button').length;
+    var program = document.querySelectorAll('.article-edu-program');
+
+    for(var i = 0; i < filterButtonsLength; i++){
+      filterButtons[i].addEventListener('click', function(i){
+        this.classList.toggle('active');
+        for(var i = 0; i < program.length; i++){
+          if(program[i].getAttribute('date-filter') !== this.innerHTML){
+            program[i].style.display = 'none'
+          }else{
+            program[i].style.display = ''
+          }
+        }
+      })
+    }
+  });
+}
+
+if(document.querySelector('.zap')){
+  (function (){
+    var zap = document.querySelectorAll('.zap');
+    var modalia = document.querySelector('.modalia');
+    for(var i = 0; i < zap.length; i++){
+      zap[i].addEventListener('click', function(){
+        modalia.classList.toggle('active');
+      })
+      modalia.addEventListener('click', function(e){
+        const target = e.target;
+        if(target === modalia){
+          modalia.classList.remove('active');
+        }
+      })
+    }
+
+  }());
+}
+
+if(document.querySelector('.select-tabs span')){
+  (function (){
+    var tabButtons = document.querySelectorAll('.select-tabs span');
+    var tabBlocks = document.querySelectorAll('.right-side .tabus');
+
+    tabButtons[0].addEventListener('click', function(){
+      tabButtons[0].classList.add('active');
+      tabButtons[1].classList.remove('active');
+      tabBlocks[0].classList.add('active');
+      tabBlocks[1].classList.remove('active');
     })
-  }
-});
-
-(function (){
-  var zap = document.querySelectorAll('.zap');
-  var modalia = document.querySelector('.modalia');
-  for(var i = 0; i < zap.length; i++){
-    zap[i].addEventListener('click', function(){
-      modalia.classList.toggle('active');
+    tabButtons[1].addEventListener('click', function(){
+      tabButtons[1].classList.add('active');
+      tabButtons[0].classList.remove('active');
+      tabBlocks[1].classList.add('active');
+      tabBlocks[0].classList.remove('active');
     })
-    modalia.addEventListener('click', function(e){
-      const target = e.target;
-      if(target === modalia){
-        modalia.classList.remove('active');
-      }
+  }());
+}
+
+if(document.querySelector('.slider-buttons .but-next')){
+  !function (){
+    var butNext = document.querySelector('.slider-buttons .but-next');
+    var butPrev = document.querySelector('.slider-buttons .but-prev');
+    var slides = document.querySelectorAll('.section--our-clients img');
+    var slidesLength = document.querySelectorAll('.section--our-clients img').length;
+    var numSlide = -1;
+    var nextSlide = 6;
+    for(var i = 0; i < 5; i += 1){
+      slides[i].classList.add('active')
+    }
+
+    butPrev.addEventListener('click',function(){
+        slides[0].classList.add('active')
+        slides[6].classList.remove('active')
+
     })
-  }
+    butNext.addEventListener('click',function(){
 
-}());
-
-(function (){
-  var tabButtons = document.querySelectorAll('.select-tabs span');
-  var tabBlocks = document.querySelectorAll('.right-side .tabus');
-
-  tabButtons[0].addEventListener('click', function(){
-    tabButtons[0].classList.add('active');
-    tabButtons[1].classList.remove('active');
-    tabBlocks[0].classList.add('active');
-    tabBlocks[1].classList.remove('active');
-  })
-  tabButtons[1].addEventListener('click', function(){
-    tabButtons[1].classList.add('active');
-    tabButtons[0].classList.remove('active');
-    tabBlocks[1].classList.add('active');
-    tabBlocks[0].classList.remove('active');
-  })
-}());
-
-!function (){
-  var butNext = document.querySelector('.slider-buttons .but-next');
-  var butPrev = document.querySelector('.slider-buttons .but-prev');
-  var slides = document.querySelectorAll('.section--our-clients img');
-  var slidesLength = document.querySelectorAll('.section--our-clients img').length;
-  var numSlide = -1;
-  var nextSlide = 6;
-  for(var i = 0; i < 5; i += 1){
-    slides[i].classList.add('active')
-  }
-
-  butPrev.addEventListener('click',function(){
-      slides[0].classList.add('active')
-      slides[6].classList.remove('active')
-
-  })
-  butNext.addEventListener('click',function(){
-
-      slides[0].classList.remove('active')
-      slides[6].classList.add('active')
+        slides[0].classList.remove('active')
+        slides[6].classList.add('active')
 
 
-  })
+    })
 
-}();
+  }();
+}
+
 (function(){
   // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
@@ -164,22 +180,24 @@ anchors.forEach(function(item) {
 });
 }());
 
+if(document.querySelector('.article-opinion')){
+  (function(){
+    var comments = document.querySelectorAll('.article-opinion');
+    var dots = document.querySelectorAll('.dots span');
 
-(function(){
-  var comments = document.querySelectorAll('.article-opinion');
-  var dots = document.querySelectorAll('.dots span');
 
+      dots[0].addEventListener('click' , function(){
+        dots[0].classList.add('active');
+        comments[0].classList.add('active');
+        dots[1].classList.remove('active');
+        comments[1].classList.remove('active');
+    })
+      dots[1].addEventListener('click' , function(){
+        dots[1].classList.add('active');
+        comments[1].classList.add('active');
+        dots[0].classList.remove('active');
+        comments[0].classList.remove('active');
+    })
+  }())
 
-    dots[0].addEventListener('click' , function(){
-      dots[0].classList.add('active');
-      comments[0].classList.add('active');
-      dots[1].classList.remove('active');
-      comments[1].classList.remove('active');
-  })
-    dots[1].addEventListener('click' , function(){
-      dots[1].classList.add('active');
-      comments[1].classList.add('active');
-      dots[0].classList.remove('active');
-      comments[0].classList.remove('active');
-  })
-}())
+}
