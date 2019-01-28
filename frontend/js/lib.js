@@ -14,7 +14,7 @@ window.onscroll = function(){
   // pravochki
   var buttonHeader = document.querySelector('.link--button'),
   programs = document.querySelectorAll('.article-edu-program'),
-  programsLength = programs.length;
+  programsLength = programs.length - 1;
 
   while(programsLength -= 1){
     programs[programsLength].querySelector('.more-info__coast button').innerHTML = 'Оставить заявку'
