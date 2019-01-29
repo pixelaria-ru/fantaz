@@ -1,4 +1,4 @@
-@media(min-width 768px) and (max-width 800px)
+@media(min-width 768px) and (max-width 1280px)
   .footer
     padding 75px 20px 40px
     .container
@@ -139,7 +139,46 @@
 
   .section--our-clients
     display none
+
+@media(max-width 1280px)
+  .education-form
+    &:nth-child(3),&:nth-child(6)
+      margin-right 0
+  .section--initial .container:before
+    left: 522px;
+@media(max-width 950px)
+  .container
+    padding 0 45px
+  .link--mail
+    display none
+  .section--initial .container:before
+    left: 483px;
+  .section--education-programs .for-whom .filter-buttons .button
+    margin-right: 5px;
+    padding: 17px 19px;
+    font-size: 15px;
+  .section--timetable
+    display none
 @media(max-width 768px)
+
+  .section--education-programs,.section--about,.section--news
+    &.container
+          padding: 55px 30px;
+  .article-edu-program h3
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 16px;
+  .section--education-programs .for-whom
+    height: max-content;
+    padding: 20px;
+  .section--education-programs .for-whom .filter-buttons .button
+    font-size: 14px;
+    margin-right: 1px;
+    padding: 17px 15px;
+  .section--our-clients,.section--completed-projects
+    overflow hidden
+  .container
+    padding: 0px 30px;
   .footer
     padding 75px 20px 40px
     .container
@@ -195,8 +234,7 @@
           &:first-child
             margin-right 0
             margin-bottom 30px
-  .container
-    padding 0 40px
+
   .link--mail
     display none
   .section--initial
@@ -207,7 +245,7 @@
       &:after
         left 440px
       &:before
-        left 480px
+        left 466px
   .section--education-formats
     padding 60px
     height max-content
@@ -222,8 +260,71 @@
     article
       &:nth-child(even)
         display none
+@media(max-width 700px)
+  .footer-menu__list
+    flex-wrap wrap
+  .section--about .right-side
+    margin-left 0
+  .article-edu-program .article-program__info .button
+    right 0
+  .section--about .about-tab
+    flex-wrap: wrap;
+    justify-content: center;
 
-@media(min-width 320px) and (max-width 767px)
+    img
+        margin-bottom: 30px;
+@media(max-width 660px)
+  .section--education-results .info
+    height max-content
+
+  .article-edu-program img
+    max-width 50px
+    max-height 50px
+  .article-edu-program .article-program__info
+    height: max-content;
+    h3
+          width: 250px;
+  .section--education-formats .right-side
+    justify-content: space-between;
+    .education-form
+      &:nth-child(2),&:nth-child(4)
+        margin-right 0
+  .article-edu-program .article-program__info .button
+    font-size: 15px;
+    padding: 10px 28px;
+    min-width: max-content;
+    span
+      display none
+  .link--tel
+    display none
+  .header
+    overflow: hidden;
+  .header__nav
+    max-height: 50px;
+    padding: 17px 0;
+    max-width: max-content;
+    width: max-content;
+    overflow: hidden;
+@media(max-width 660px)
+  .page .education-blocks .edu-block__header,.page .education-blocks .edu-block
+    max-width 100%
+    width 100%
+  .page .individual-education h2
+    line-height 39px
+    font-size 31px
+  .article-news
+    a
+      flex-wrap: wrap;
+    img
+      max-width: 100%;
+      max-height: 200px;
+  .article-news .info 
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+@media(min-width 320px) and (max-width 435px)
+  .article-edu-program .article-program__info
+    height: max-content;
   .footer
     padding 75px 20px 40px
     hr
