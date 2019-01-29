@@ -2513,6 +2513,17 @@ input[type='submit'] + label
 
 @media (max-width: 768px)
 {
+    .article-edu-program .more-info__section .left-side
+    {
+        width: 100%;
+    }
+
+    .article-edu-program .more-info__section,
+    .article-edu-program .article-program__more-info .more-info__about
+    {
+        flex-wrap: wrap;
+    }
+
     .section--education-programs.container,
     .section--about.container,
     .section--news.container
