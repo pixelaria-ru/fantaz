@@ -3,6 +3,11 @@
   top 0
   width 100%
   z-index 99
+  &.fixed
+    position fixed
+    z-index 9999
+    box-shadow 0 0 12px rgba(0,0,0 .12)
+    top 0
   &__up-line
     width 100%
     background #fff
@@ -10,11 +15,7 @@
       height 110px
       align-items center
       justify-content space-between
-    &.fixed
-      position fixed
-      z-index 9999
-      box-shadow 0 0 12px rgba(0,0,0 .12)
-      top 0
+
   &__nav
     max-height 50px
     padding calc((50px - 16px) / 2 ) 0

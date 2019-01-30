@@ -4,9 +4,9 @@ window.onscroll = function () {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrolled > 200) {
-    document.querySelector('.header__up-line').classList.add('fixed');
+    document.querySelector('.header').classList.add('fixed');
   } else {
-    document.querySelector('.header__up-line').classList.remove('fixed');
+    document.querySelector('.header').classList.remove('fixed');
   }
 };
 
