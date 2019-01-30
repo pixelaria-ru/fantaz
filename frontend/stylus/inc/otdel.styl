@@ -61,6 +61,17 @@
 .circlusy--section
   position relative
   height 900px
+  &:after
+    content ''
+    background url('../images/9-layers.png') no-repeat
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    margin auto
+    background-position center
+    z-index -1
   .cirk1,.cirk2,.cirk3,.cirk4,.cirk5,.cirk6,.cirk7,.cirk8,.cirk9,.cirk10,.cirk11
     width 200px
     height 200px
@@ -93,7 +104,7 @@
     font-weight 400
     line-height 24px
     margin-bottom: 140px;
-    margin-left: 485px;
+    margin-left: 508px;
     text-transform: none;
     &:after
       height 221px
@@ -113,7 +124,7 @@
     font-weight 400
     line-height 24px
     margin-left: 235px;
-    margin-top: 325px;
+    margin-top: 365px;
     text-transform: none;
     &:after
       height 273px
@@ -153,7 +164,7 @@
     font-size 16px
     text-transform: none;
     font-weight 400
-    margin-right: 213px
+    margin-right: 257px
     margin-bottom: 150px
     line-height 24px
     &:after
@@ -194,7 +205,7 @@
     font-weight 400
     text-transform: none;
     line-height 24px
-    margin-right: 122px;
+    margin-right: 185px;
     margin-top: 267px;
     &:after
       height 367px
@@ -215,8 +226,8 @@
     text-transform: none;
     font-weight 400
     line-height 24px
-    margin-left: 210px;
-    margin-top: 147px;
+    margin-top: 173px;
+    margin-left: 233px;
     &:after
       height 314px
       width 2px
@@ -287,3 +298,94 @@
       content ''
       transform rotate(41deg) translate(-2px, 75px)
       z-index -1
+
+.discription-program
+  box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+  background-color #ffffff
+  margin-bottom 25px
+  .left-side
+    align-items center
+    justify-content center
+    width 260px
+
+    background-color #777777
+    flex-direction column
+    &-program__img
+      width 100px
+      height 100px
+      align-items center
+      justify-content center
+      background-color #ffffff
+      border-radius 50%
+      display flex
+      img
+        max-width 50px
+        max-height 50px
+        object-fit: contain;
+    h3
+      color #ffffff
+      margin-top 20px
+      font-size 24px
+      font-weight 400
+      max-width 210px
+      text-align center
+      line-height 28px
+  .right-side
+    &-program__first-line
+      width 850px
+      height 240px
+      background-color #4eabc2
+      padding 50px 40px
+      h4
+        color #ffffff
+        font-size 18px
+        font-weight 700
+        line-height 28px
+        margin-bottom 12px
+
+      .first-line__item
+        color #ffffff
+        font-size 18px
+        font-weight 400
+        margin-bottom 10px
+        line-height 28px
+        display flex
+        align-items center
+        &:nth-child(1)
+          &:before
+            content ''
+            display block
+            background-image url('../images/professional-advance.png') no-repeat
+            width 20px
+            height 20px
+            margin-right 10px
+        &:nth-child(2)
+          &:before
+            content ''
+            display block
+            background-image url('../images/mission.png') no-repeat
+            width 20px
+            height 20px
+            margin-right 10px
+        &:nth-child(3)
+          &:before
+            content ''
+            display block
+            background-image url('../images/collaboration.png') no-repeat
+            width 20px
+            height 20px
+            margin-right 10px
+    &-program__second-line
+      padding 50px 40px
+      h4
+        color #444444
+        font-size 16px
+        font-weight 700
+        line-height 28px
+        margin-bottom 12px
+      .second-line__item
+        color #444444
+        font-size 16px
+        font-weight 400
+        line-height 28px
+        margin-bottom 10px

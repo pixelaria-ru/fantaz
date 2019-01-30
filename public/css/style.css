@@ -2307,6 +2307,23 @@ input[type='submit'] + label
     height: 900px;
 }
 
+.circlusy--section:after
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+
+    content: '';
+
+    background: url('../images/9-layers.png') no-repeat;
+    background-position: center;
+}
+
 .circlusy--section .cirk1,
 .circlusy--section .cirk2,
 .circlusy--section .cirk3,
@@ -2358,7 +2375,7 @@ input[type='submit'] + label
     width: 130px;
     height: 130px;
     margin-bottom: 140px;
-    margin-left: 485px;
+    margin-left: 508px;
 
     text-transform: none;
 
@@ -2389,7 +2406,7 @@ input[type='submit'] + label
 
     width: 160px;
     height: 160px;
-    margin-top: 325px;
+    margin-top: 365px;
     margin-left: 235px;
 
     text-transform: none;
@@ -2460,7 +2477,7 @@ input[type='submit'] + label
 
     width: 140px;
     height: 140px;
-    margin-right: 213px;
+    margin-right: 257px;
     margin-bottom: 150px;
 
     text-transform: none;
@@ -2531,7 +2548,7 @@ input[type='submit'] + label
     width: 140px;
     height: 140px;
     margin-top: 267px;
-    margin-right: 122px;
+    margin-right: 185px;
 
     text-transform: none;
 
@@ -2563,8 +2580,8 @@ input[type='submit'] + label
 
     width: 120px;
     height: 120px;
-    margin-top: 147px;
-    margin-left: 210px;
+    margin-top: 173px;
+    margin-left: 233px;
 
     text-transform: none;
 
@@ -2693,6 +2710,171 @@ input[type='submit'] + label
             transform: rotate(41deg) translate(-2px, 75px);
 
     background: #4e4e4e;
+}
+
+.discription-program
+{
+    margin-bottom: 25px;
+
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.discription-program .left-side
+{
+    flex-direction: column;
+
+    width: 260px;
+
+    background: #777;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.discription-program .left-side-program__img
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    background: #fff;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.discription-program .left-side-program__img img
+{
+    max-width: 50px;
+    max-height: 50px;
+
+    -o-object-fit: contain;
+
+       object-fit: contain;
+}
+
+.discription-program .left-side h3
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    max-width: 210px;
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.discription-program .right-side-program__first-line
+{
+    width: 850px;
+    height: 240px;
+    padding: 50px 40px;
+
+    background: #4eabc2;
+}
+
+.discription-program .right-side-program__first-line h4
+{
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+
+    margin-bottom: 12px;
+
+    color: #fff;
+}
+
+.discription-program .right-side-program__first-line .first-line__item
+{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    align-items: center;
+}
+
+.discription-program .right-side-program__first-line .first-line__item:nth-child(1):before
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    content: '';
+
+    background: url('../images/professional-advance.png') no-repeat;
+}
+
+.discription-program .right-side-program__first-line .first-line__item:nth-child(2):before
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    content: '';
+
+    background: url('../images/mission.png') no-repeat;
+}
+
+.discription-program .right-side-program__first-line .first-line__item:nth-child(3):before
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    content: '';
+
+    background: url('../images/collaboration.png') no-repeat;
+}
+
+.discription-program .right-side-program__second-line
+{
+    padding: 50px 40px;
+}
+
+.discription-program .right-side-program__second-line h4
+{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+
+    margin-bottom: 12px;
+
+    color: #444;
+}
+
+.discription-program .right-side-program__second-line .second-line__item
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    margin-bottom: 10px;
+
+    color: #444;
 }
 
 @media (min-width: 768px) and (max-width: 1280px)
