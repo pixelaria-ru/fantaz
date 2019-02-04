@@ -1,4 +1,5 @@
 @media(min-width 768px) and (max-width 1279px)
+
   .footer
     padding 75px 20px 40px
     .container
@@ -157,6 +158,60 @@
   .section--timetable
     display none
 @media(max-width 768px)
+  .page-otdel
+    .initial-acreen .wrap .justi-bet
+      flex-direction: column;
+    .initi__container-righter
+      width: 100%;
+      margin-left: -10px;
+      height: max-content;
+      margin-top: 125px;
+    .circlusy--section
+      margin-top: 230px;
+      margin-bottom: -100px;
+      .cirk3
+        margin-left: 60px;
+      .cirk6
+        margin-left: 11px;
+        margin-bottom: 209px;
+      .cirk8
+        margin-top: 214px;
+        margin-left: 31px;
+      .cirk10
+        margin-top: 119px;
+        margin-right: 268px;
+      .cirk7
+        margin-top: 291px;
+        margin-right: 8px;
+      .cirk11
+        margin-top: 272px;
+        margin-right: 181px;
+      .cirk9
+        margin-top: 189px;
+        margin-left: 239px;
+      .cirk4
+        margin-right: 95px;
+        margin-bottom: 336px;
+      .cirk5
+        margin-right: 380px;
+      .cirk2
+        margin-bottom: 190px;
+        margin-left: 575px;
+    .section-discription-program
+      padding: 0;
+      .discription-program .left-side
+        width: 200px;
+      .discription-program .right-side-program__first-line
+        width: 100%
+        height: max-content;
+      .discription-program .right-side-program__second-line
+        width: 100%
+      .discription-program .right-side
+        width: calc(100% - 200px)
+      .discription-program .left-side h3
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
   .section--news
     article
       &:nth-child(even)
@@ -174,7 +229,7 @@
     margin-left: 16px;
   .section--education-programs .for-whom
     height: max-content;
-    padding: 20px;
+    padding: 40px;
   .section--education-programs .for-whom .filter-buttons .button
     font-size: 14px;
     margin-right: 1px;
@@ -287,7 +342,7 @@
   .article-edu-program .article-program__info
     height: max-content;
     h3
-          width: 250px;
+          width: 280px;
   .section--education-formats .right-side
     justify-content: space-between;
     .education-form
@@ -306,9 +361,7 @@
   .header__nav
     max-height: 50px;
     padding: 17px 0;
-    max-width: max-content;
-    width: max-content;
-    overflow: hidden;
+
 @media(max-width 660px)
   .page .education-blocks .edu-block__header,.page .education-blocks .edu-block
     max-width 100%
@@ -327,6 +380,55 @@
     margin-left: 0;
     margin-top: 20px;
 @media(min-width 320px) and (max-width 435px)
+  .page-otdel
+    .initi__container-righter
+      margin-left: 0px;
+      padding: 30px 20px;
+      margin-top: 75px;
+
+      p
+        margin-left: 0;
+    .initial-acreen
+      height: 530px;
+      align-items flex-start
+      .wrap
+        height: 230px;
+        margin-top: 50px;
+        .odel-buttons
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .button
+            margin-right 0
+
+            &:first-child
+              margin-right 0
+        .progu
+          h1
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 36px;
+          p
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 35px;
+    .section-discription-program
+      margin-top 520px
+      .discription-program
+        flex-direction column
+        .right-side-program__first-line
+              padding: 35px 20px;
+        .right-side-program__second-line
+          padding: 30px 25px;
+        .left-side
+          width: 100%;
+          .left-side-program__img
+            display none
+        .right-side
+          width 100%
+    .circlusy--section
+      display none
   .article-edu-program .article-program__info
     height: max-content;
   .footer
@@ -433,8 +535,10 @@
   .header
     overflow hidden
   .header__nav
-    width max-content
-    background #5b5b5b;
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+
   .section--initial
     height max-content
     .container
@@ -514,7 +618,7 @@
     .section__img
       display none
   .section--our-clients
-    overflow hidden
+    overflow auto
   .section--about
     padding 50px 20px
     h2

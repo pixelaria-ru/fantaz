@@ -266,8 +266,13 @@
 
 .header__nav
 {
+    overflow: auto;
+
+    width: 100%;
     max-height: 50px;
     padding: calc((50px - 16px) / 2) 0;
+
+    white-space: nowrap;
 
     background: #488999;
 
@@ -1517,8 +1522,8 @@ input[type='submit'] + label
 .article-edu-program.active .article-program__info .button:hover
 {
     color: #fff;
-    border-color: #ea6969;
-    background: #ea6969;
+    border-color: #fff;
+    background: 0;
 }
 
 .article-edu-program.active h3
@@ -3275,6 +3280,120 @@ input[type='submit'] + label
 
 @media (max-width: 768px)
 {
+    .page-otdel .initial-acreen .wrap .justi-bet
+    {
+        flex-direction: column;
+    }
+
+    .page-otdel .initi__container-righter
+    {
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin-top: 125px;
+        margin-left: -10px;
+    }
+
+    .page-otdel .circlusy--section
+    {
+        margin-top: 230px;
+        margin-bottom: -100px;
+    }
+
+    .page-otdel .circlusy--section .cirk3
+    {
+        margin-left: 60px;
+    }
+
+    .page-otdel .circlusy--section .cirk6
+    {
+        margin-bottom: 209px;
+        margin-left: 11px;
+    }
+
+    .page-otdel .circlusy--section .cirk8
+    {
+        margin-top: 214px;
+        margin-left: 31px;
+    }
+
+    .page-otdel .circlusy--section .cirk10
+    {
+        margin-top: 119px;
+        margin-right: 268px;
+    }
+
+    .page-otdel .circlusy--section .cirk7
+    {
+        margin-top: 291px;
+        margin-right: 8px;
+    }
+
+    .page-otdel .circlusy--section .cirk11
+    {
+        margin-top: 272px;
+        margin-right: 181px;
+    }
+
+    .page-otdel .circlusy--section .cirk9
+    {
+        margin-top: 189px;
+        margin-left: 239px;
+    }
+
+    .page-otdel .circlusy--section .cirk4
+    {
+        margin-right: 95px;
+        margin-bottom: 336px;
+    }
+
+    .page-otdel .circlusy--section .cirk5
+    {
+        margin-right: 380px;
+    }
+
+    .page-otdel .circlusy--section .cirk2
+    {
+        margin-bottom: 190px;
+        margin-left: 575px;
+    }
+
+    .page-otdel .section-discription-program
+    {
+        padding: 0;
+    }
+
+    .page-otdel .section-discription-program .discription-program .left-side
+    {
+        width: 200px;
+    }
+
+    .page-otdel .section-discription-program .discription-program .right-side-program__first-line
+    {
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+    }
+
+    .page-otdel .section-discription-program .discription-program .right-side-program__second-line
+    {
+        width: 100%;
+    }
+
+    .page-otdel .section-discription-program .discription-program .right-side
+    {
+        width: calc(100% - 200px);
+    }
+
+    .page-otdel .section-discription-program .discription-program .left-side h3
+    {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
     .section--news article:nth-child(even)
     {
         display: none;
@@ -3311,7 +3430,7 @@ input[type='submit'] + label
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content;
-        padding: 20px;
+        padding: 40px;
     }
 
     .section--education-programs .for-whom .filter-buttons .button
@@ -3542,7 +3661,7 @@ input[type='submit'] + label
 
     .article-edu-program .article-program__info h3
     {
-        width: 250px;
+        width: 280px;
     }
 
     .section--education-formats .right-side
@@ -3585,16 +3704,6 @@ input[type='submit'] + label
 
     .header__nav
     {
-        overflow: hidden;
-
-        width: -webkit-max-content;
-
-        width: -moz-max-content;
-
-        width: max-content;
-        max-width: -webkit-max-content;
-        max-width: -moz-max-content;
-        max-width: max-content;
         max-height: 50px;
         padding: 17px 0;
     }
@@ -3636,6 +3745,106 @@ input[type='submit'] + label
 
 @media (min-width: 320px) and (max-width: 435px)
 {
+    .page-otdel .initi__container-righter
+    {
+        margin-top: 75px;
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+
+    .page-otdel .initi__container-righter p
+    {
+        margin-left: 0;
+    }
+
+    .page-otdel .initial-acreen
+    {
+        height: 530px;
+
+        align-items: flex-start;
+    }
+
+    .page-otdel .initial-acreen .wrap
+    {
+        height: 230px;
+        margin-top: 50px;
+    }
+
+    .page-otdel .initial-acreen .wrap .odel-buttons
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-otdel .initial-acreen .wrap .odel-buttons .button
+    {
+        margin-right: 0;
+    }
+
+    .page-otdel .initial-acreen .wrap .odel-buttons .button:first-child
+    {
+        margin-right: 0;
+    }
+
+    .page-otdel .initial-acreen .wrap .progu h1
+    {
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 2.25rem;
+    }
+
+    .page-otdel .initial-acreen .wrap .progu p
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.1875rem;
+    }
+
+    .page-otdel .section-discription-program
+    {
+        margin-top: 520px;
+    }
+
+    .page-otdel .section-discription-program .discription-program
+    {
+        flex-direction: column;
+    }
+
+    .page-otdel .section-discription-program .discription-program .right-side-program__first-line
+    {
+        padding: 35px 20px;
+    }
+
+    .page-otdel .section-discription-program .discription-program .right-side-program__second-line
+    {
+        padding: 30px 25px;
+    }
+
+    .page-otdel .section-discription-program .discription-program .left-side
+    {
+        width: 100%;
+    }
+
+    .page-otdel .section-discription-program .discription-program .left-side .left-side-program__img
+    {
+        display: none;
+    }
+
+    .page-otdel .section-discription-program .discription-program .right-side
+    {
+        width: 100%;
+    }
+
+    .page-otdel .circlusy--section
+    {
+        display: none;
+    }
+
     .article-edu-program .article-program__info
     {
         height: -webkit-max-content;
@@ -3843,11 +4052,11 @@ input[type='submit'] + label
 
     .header__nav
     {
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
+        overflow: auto;
 
-        background: #5b5b5b;
+        width: 100%;
+
+        white-space: nowrap;
     }
 
     .section--initial
@@ -4016,7 +4225,7 @@ input[type='submit'] + label
 
     .section--our-clients
     {
-        overflow: hidden;
+        overflow: auto;
     }
 
     .section--about
