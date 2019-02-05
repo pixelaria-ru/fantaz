@@ -1553,6 +1553,11 @@ input[type='submit'] + label
     background: 0;
 }
 
+.article-edu-program .article-program__info .button b
+{
+    font-weight: normal;
+}
+
 .article-edu-program:last-child
 {
     margin-bottom: 0;
@@ -3257,6 +3262,18 @@ input[type='submit'] + label
 
 @media (max-width: 950px)
 {
+    .initial-info:after,
+    .initial-info:before
+    {
+        position: absolute;
+        bottom: -85px;
+        left: 0;
+
+        content: '';
+
+        box-shadow: inset 6px -4px 10px rgba(0,0,0,.04);
+    }
+
     .more-info__coast
     {
         margin: 15px auto 0;
@@ -3758,6 +3775,76 @@ input[type='submit'] + label
 
 @media (min-width: 320px) and (max-width: 435px)
 {
+    .initial-info:after,
+    .initial-info:before
+    {
+        position: absolute;
+        bottom: -85px;
+        left: 0;
+
+        content: '';
+
+        box-shadow: inset 6px -4px 10px rgba(0,0,0,.04);
+    }
+
+    .section--initial .container:after
+    {
+        position: absolute;
+        top: 19px;
+        left: 0;
+
+        width: 100px;
+        height: 0;
+
+        content: '';
+        -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg) translate(161px, 111px);
+
+        border-right: 70px solid transparent;
+        border-bottom: 70px solid #569fb1;
+        border-left: 70px solid transparent;
+    }
+
+    .article-edu-program:nth-child(12) .article-program__info .button:nth-child(3):after
+    {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+
+    .article-edu-program .article-program__info .button:nth-child(3)
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        width: 22px;
+        height: 22px;
+        padding: 0;
+
+        background: #ea6969;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article-edu-program .article-program__info .button:nth-child(3):after
+    {
+        display: block;
+
+        width: 12px;
+        height: 7px;
+
+        content: '';
+
+        background: url('../images/down-arrow-white.png') no-repeat;
+        background-size: contain;
+    }
+
+    .article-edu-program .article-program__info .button:nth-child(3) b
+    {
+        display: none;
+    }
+
     .page-otdel .initi__container-righter
     {
         margin-top: 75px;
@@ -4300,6 +4387,13 @@ input[type='submit'] + label
         margin-bottom: 10px;
     }
 
+    .section--education-programs .article-edu-program.active
+    {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+    }
+
     .section--education-programs .article-edu-program img
     {
         width: 40px;
@@ -4316,7 +4410,7 @@ input[type='submit'] + label
 
     .section--education-programs .article-edu-program button
     {
-        display: none;
+        background: #ea6969;
     }
 
     .section--completed-projects

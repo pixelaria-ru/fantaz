@@ -23,7 +23,7 @@ if(document.querySelector('.article-edu-program')){
     programs[0].querySelector('.more-info__coast .button').innerHTML = 'Оставить заявку'
     programs[0].querySelector('.more-info__button .button').innerHTML = 'Оставить заявку'
 
-    programs[programs.length - 1].querySelector('.article-program__info .button').innerHTML = 'сформировать';
+    programs[programs.length - 1].querySelector('.article-program__info .button').innerHTML = '<b>сформировать</b>';
 
 
 
@@ -44,9 +44,9 @@ if(document.querySelector('.article-edu-program')){
         this.parentNode.parentNode.classList.toggle('active');
 
         if(this.parentNode.parentNode.classList.contains('active')){
-          this.innerHTML = 'свернуть';
+          this.innerHTML = '<b>свернуть</b>';
         }else{
-          this.innerHTML = 'описание курса';
+          this.innerHTML = '<b>описание курса</b>';
         }
       })
       program[i].querySelector('.more-info__close').addEventListener('click', function(){
