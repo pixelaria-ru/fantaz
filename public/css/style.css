@@ -1781,6 +1781,8 @@ input[type='submit'] + label
 
 .section--our-clients
 {
+    overflow: auto;
+
     padding: 80px 85px;
 
     align-items: center;
@@ -2195,6 +2197,12 @@ input[type='submit'] + label
     margin-bottom: 20px;
 
     color: #444;
+}
+
+.page-otdel .section--timetable,
+.page-otdel .section--opinions
+{
+    margin-top: 70px;
 }
 
 .page-otdel .initial-acreen
@@ -3249,6 +3257,11 @@ input[type='submit'] + label
 
 @media (max-width: 950px)
 {
+    .more-info__coast
+    {
+        margin: 15px auto 0;
+    }
+
     .container
     {
         padding: 0 45px;
@@ -3268,7 +3281,7 @@ input[type='submit'] + label
     {
         font-size: 0.9375rem;
 
-        margin-right: 5px;
+        margin-right: 9px;
         padding: 17px 19px;
     }
 
@@ -4308,6 +4321,6 @@ input[type='submit'] + label
 
     .section--completed-projects
     {
-        display: none;
+        overflow: auto;
     }
 }
