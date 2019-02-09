@@ -264,6 +264,11 @@
     justify-content: space-between;
 }
 
+.header__info
+{
+    align-items: center;
+}
+
 .header__nav
 {
     overflow: auto;
@@ -277,6 +282,25 @@
     background: #488999;
 
     background: var(--darkBlue);
+}
+
+.vk
+{
+    margin-left: 25px;
+}
+
+.vk img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.subscibe
+{
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    color: #488999;
 }
 
 .link
@@ -2293,6 +2317,7 @@ input[type='submit'] + label
     margin-right: 17px;
     padding: 10px;
 
+    transition: .33s;
     text-align: center;
 
     background: #fff;
@@ -2300,6 +2325,13 @@ input[type='submit'] + label
 
     align-items: center;
     justify-content: center;
+}
+
+.main-screen__item:hover,
+.main-screen__item:focus
+{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .main-screen__item:last-child

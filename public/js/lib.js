@@ -30,7 +30,7 @@ if (document.querySelector('.article-edu-program')) {
 (function () {
   // pravochki
   var buttonHeader = document.querySelector('.link--button');
-  buttonHeader.innerHTML = 'Связаться с нами';
+  buttonHeader.innerHTML = 'записаться';
 })();
 
 if (document.querySelector('.article-edu-program')) {
