@@ -103,14 +103,27 @@ if(document.querySelector('.select-tabs span')){
 
     tabButtons[0].addEventListener('click', function(){
       tabButtons[0].classList.add('active');
-      tabButtons[1].classList.remove('active');
       tabBlocks[0].classList.add('active');
+
+      tabButtons[1].classList.remove('active');
       tabBlocks[1].classList.remove('active');
+      tabButtons[2].classList.remove('active');
+      tabBlocks[2].classList.remove('active');
     })
     tabButtons[1].addEventListener('click', function(){
       tabButtons[1].classList.add('active');
-      tabButtons[0].classList.remove('active');
       tabBlocks[1].classList.add('active');
+      tabButtons[0].classList.remove('active');
+      tabBlocks[0].classList.remove('active');
+      tabButtons[2].classList.remove('active');
+      tabBlocks[2].classList.remove('active');
+    })
+    tabButtons[2].addEventListener('click', function(){
+      tabButtons[2].classList.add('active');
+      tabBlocks[2].classList.add('active');
+      tabButtons[1].classList.remove('active');
+      tabBlocks[1].classList.remove('active');
+      tabButtons[0].classList.remove('active');
       tabBlocks[0].classList.remove('active');
     })
   }());

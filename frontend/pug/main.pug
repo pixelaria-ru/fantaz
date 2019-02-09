@@ -1,0 +1,25 @@
+doctype html
+html(lang='ru')
+  head
+    meta(name='robots' content='none')
+    meta( charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    link( rel='stylesheet' href='css/style.min.css')
+    title Главная
+  body
+    include inc/header.pug
+    main.main.mainko-pageko
+      include section/main-screen.pug
+      include section/trening.pug
+      include section/education-results.pug
+      include section/page-first-screen.pug
+      include section/otdel-first-screen.pug
+      include section/circusly-section.pug
+      include section/time-table.pug
+      hr.hr-xer
+      include section/about.pug
+      include section/comments-section.pug
+      include section/completed-projects.pug
+      include section/our-clients.pug
+
+    include inc/footer.pug

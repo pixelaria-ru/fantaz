@@ -1,0 +1,54 @@
+.main-screen
+  flex-direction column
+  align-items center
+  justify-content center
+  position relative
+  padding 90px 0 270px
+  background-image: linear-gradient(126deg, #57aabe 0%, #65cbe4 100%);
+  &:after
+    content ''
+    background-image url('../images/after-bg.png')
+    position absolute
+    bottom 0
+    background-size: cover;
+    width 100%
+    height 159px
+  h1
+    color #ffffff
+    font-size 48px
+    font-weight 400
+    line-height 58px
+    margin-bottom 80px
+  &__list
+    justify-content center
+  &__item
+    width 208px
+    height 240px
+    box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+    background-color #ffffff
+    margin-right 17px
+    flex-direction column
+    align-items center
+    justify-content center
+    text-align center
+    padding 10px
+    &:last-child
+      margin-right 0
+    img
+      margin-bottom 25px
+      width: max-content;
+      height: max-content;
+    p
+      color #444444
+      font-size 24px
+      font-weight 400
+      line-height 32px
+      text-transform lowercase
+
+
+.mainko-pageko
+  .section--completed-projects h2,.section--our-clients h2
+    border 0
+  .section--our-clients
+
+    padding: 0 85px 80px;
