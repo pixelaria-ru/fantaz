@@ -8,7 +8,7 @@
 
 .main
 {
-    margin-top: 160px;
+    margin-top: 130px;
 }
 
 .flex
@@ -231,6 +231,11 @@
     box-shadow: 0 5px 5px rgba(0,0,0,.05);
 }
 
+.page-time-table .puga-duga .section--timetable
+{
+    padding: 75px 85px;
+}
+
 .header
 {
     position: absolute;
@@ -258,7 +263,7 @@
 
 .header__up-line .container
 {
-    height: 110px;
+    height: 80px;
 
     align-items: center;
     justify-content: space-between;
