@@ -137,21 +137,39 @@ if(document.querySelector('.slider-buttons .but-next')){
     var slidesLength = document.querySelectorAll('.section--our-clients img').length;
     var numSlide = -1;
     var nextSlide = 6;
+    var countMinSlide = 0;
+    var countMaxSlide = 5;
     for(var i = 0; i < 5; i += 1){
       slides[i].classList.add('active')
     }
 
     butPrev.addEventListener('click',function(){
-        slides[0].classList.add('active')
-        slides[6].classList.remove('active')
+      console.log(countMaxSlide)
+      if(countMinSlide > 0){
+        slides[countMinSlide].classList.add('active')
+        slides[countMaxSlide].classList.remove('active')
+        countMinSlide--
+        countMaxSlide-=1
+
+
+      }
+
+
 
     })
     butNext.addEventListener('click',function(){
 
-        slides[0].classList.remove('active')
-        slides[6].classList.add('active')
-
-
+        slides[countMinSlide].classList.remove('active')
+        slides[countMaxSlide].classList.add('active')
+        if(countMaxSlide < slidesLength ){
+          if(countMaxSlide === slidesLength - 1){
+            countMaxSlide = slidesLength - 1;
+          }else{
+            countMinSlide++
+            countMaxSlide++
+          }
+        }
+        console.log(countMaxSlide)
     })
 
   }();
