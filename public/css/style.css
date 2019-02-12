@@ -908,6 +908,13 @@ input[type='submit'] + label
     border: 1px solid #fff;
 }
 
+.page .individual-education .individual-block:last-child .item__img img,
+.puga-duga-ras .individual-education .individual-block:last-child .item__img img
+{
+    width: 20px;
+    height: 18px;
+}
+
 .page .individual-education .individual-block:last-child:after,
 .puga-duga-ras .individual-education .individual-block:last-child:after
 {
