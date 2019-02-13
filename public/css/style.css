@@ -86,7 +86,116 @@
     background: #ea5555;
 }
 
-.modalia
+.projects-modal,
+.formats-modal
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+
+    padding-top: 200px;
+
+    justify-content: center;
+}
+
+.projects-modal .block-open-project,
+.formats-modal .block-open-project,
+.projects-modal .block-open-format,
+.formats-modal .block-open-format
+{
+    display: none;
+
+    width: 900px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 100px 120px;
+
+    background: #fff;
+}
+
+.projects-modal .block-open-project.active,
+.formats-modal .block-open-project.active,
+.projects-modal .block-open-format.active,
+.formats-modal .block-open-format.active
+{
+    display: block;
+}
+
+.projects-modal .block-open-project h2,
+.formats-modal .block-open-project h2,
+.projects-modal .block-open-format h2,
+.formats-modal .block-open-format h2
+{
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+
+    margin-bottom: 15px;
+
+    transition: .55s;
+
+    color: #56b3ca;
+}
+
+.projects-modal .block-open-project p,
+.formats-modal .block-open-project p,
+.projects-modal .block-open-format p,
+.formats-modal .block-open-format p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
+    margin-top: 20px;
+    margin-bottom: 17px;
+
+    color: #444;
+}
+
+.projects-modal .block-open-project ul,
+.formats-modal .block-open-project ul,
+.projects-modal .block-open-format ul,
+.formats-modal .block-open-format ul
+{
+    margin-top: 20px;
+    margin-left: 20px;
+
+    list-style: unset;
+}
+
+.projects-modal .block-open-project ol,
+.formats-modal .block-open-project ol,
+.projects-modal .block-open-format ol,
+.formats-modal .block-open-format ol
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.projects-modal .block-open-project ul li,
+.formats-modal .block-open-project ul li,
+.projects-modal .block-open-format ul li,
+.formats-modal .block-open-format ul li,
+.projects-modal .block-open-project ol li,
+.formats-modal .block-open-project ol li,
+.projects-modal .block-open-format ol li,
+.formats-modal .block-open-format ol li
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+
+    margin-top: 0;
+    margin-bottom: 17px;
+
+    color: #444;
+}
+
+.modalia,
+.projects-modal,
+.formats-modal
 {
     position: fixed;
     z-index: -9;
@@ -101,17 +210,21 @@
     transition: opacity .55s;
 
     opacity: 0;
-    background: rgba(0,0,0,.15);
+    background: rgba(0,0,0,.25);
 }
 
-.modalia.active
+.modalia.active,
+.projects-modal.active,
+.formats-modal.active
 {
-    z-index: 100;
+    z-index: 999999;
 
     opacity: 1;
 }
 
-.modalia.active .main-form
+.modalia.active .main-form,
+.projects-modal.active .main-form,
+.formats-modal.active .main-form
 {
     position: absolute;
     top: 0;
@@ -133,12 +246,16 @@
     align-items: center;
 }
 
-.modalia.active .main-form button
+.modalia.active .main-form button,
+.projects-modal.active .main-form button,
+.formats-modal.active .main-form button
 {
     width: 400px;
 }
 
-.modalia.active .main-form p
+.modalia.active .main-form p,
+.projects-modal.active .main-form p,
+.formats-modal.active .main-form p
 {
     font-size: 0.875rem;
     font-weight: 400;
@@ -149,7 +266,9 @@
     color: #646464;
 }
 
-.modalia.active .main-form textarea
+.modalia.active .main-form textarea,
+.projects-modal.active .main-form textarea,
+.formats-modal.active .main-form textarea
 {
     width: 400px;
     height: 120px;
@@ -159,7 +278,9 @@
     background: #f9f9f9;
 }
 
-.modalia.active .main-form input
+.modalia.active .main-form input,
+.projects-modal.active .main-form input,
+.formats-modal.active .main-form input
 {
     font-size: 1rem;
     font-weight: 400;
@@ -1858,7 +1979,17 @@ input[type='submit'] + label
     margin-right: 35px;
     margin-bottom: 35px;
 
+    cursor: pointer;
+    transition: .33s;
+
     align-items: center;
+}
+
+.education-form:hover,
+.education-form:focus
+{
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .education-form__img
@@ -2215,8 +2346,25 @@ input[type='submit'] + label
 
 .section--completed-projects .complete-project
 {
-    max-width: 220px;
-    margin: 25px;
+    display: none;
+
+    max-width: 33%;
+    margin-left: 50px;
+
+    cursor: pointer;
+    transition: .33s;
+}
+
+.section--completed-projects .complete-project.active
+{
+    display: block;
+}
+
+.section--completed-projects .complete-project:hover,
+.section--completed-projects .complete-project:focus
+{
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .section--completed-projects .complete-project img

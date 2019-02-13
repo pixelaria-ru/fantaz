@@ -46,7 +46,58 @@
     background-color #ea6969
     &:hover
       background-color #ea5555
-.modalia
+
+
+.projects-modal,.formats-modal
+  display: flex;
+  justify-content: center;
+
+  overflow auto
+  padding-top 200px
+
+
+  .block-open-project,.block-open-format
+    background #fff
+    display none
+    width: 900px;
+    padding 100px 120px
+    height: max-content;
+    &.active
+      display block
+    h2
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 36px;
+      margin-bottom: 15px;
+      transition: .55s;
+      color: #56b3ca;
+    p
+      margin-top 20px
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.75rem;
+      margin-bottom: 17px;
+      color: #444;
+    ul
+      list-style unset
+      margin-left: 20px;
+      margin-top 20px
+    ol
+      margin-left: 20px;
+      margin-top 20px
+    ul li, ol li
+      margin-top 0px
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 17px;
+      color: #444;
+
+
+
+
+
+.modalia,.projects-modal,.formats-modal
   z-index -9
   opacity 0
   position fixed
@@ -55,11 +106,12 @@
   left 0
   right 0
   margin auto
-  background rgba(0, 0, 0, 0.15)
+  background rgba(0, 0, 0, 0.25)
   transition opacity .55s
   cursor pointer
+
   &.active
-    z-index 100
+    z-index 999999
     opacity 1
     .main-form
       position absolute
@@ -132,7 +184,7 @@
   background-color #ffffff
 
 .page-time-table
-  .puga-duga .section--timetable 
+  .puga-duga .section--timetable
     padding: 75px 85px;
 
 @import 'inc/header.styl'
