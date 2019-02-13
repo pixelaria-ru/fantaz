@@ -129,12 +129,12 @@ if(document.querySelector('.select-tabs span')){
   }());
 }
 
-if(document.querySelector('.slider-buttons .but-next')){
+if(document.querySelector('.section--our-clients')){
   !function (){
-    var butNext = document.querySelector('.slider-buttons .but-next');
-    var butPrev = document.querySelector('.slider-buttons .but-prev');
-    var slides = document.querySelectorAll('.section--our-clients img');
-    var slidesLength = document.querySelectorAll('.section--our-clients img').length;
+    var butNext = document.querySelector('.section--our-clients .slider-buttons .but-next');
+    var butPrev = document.querySelector('.section--our-clients .slider-buttons .but-prev');
+    var slides = document.querySelectorAll('.section--our-clients .section--our-clients img');
+    var slidesLength = document.querySelectorAll('.section--our-clients .section--our-clients img').length;
     var numSlide = -1;
     var nextSlide = 6;
     var countMinSlide = 0;
