@@ -17,15 +17,28 @@
     justify-content center
   .trening__item
     margin-right 30px
+    &:nth-child(2)
+      .trening__item-imga
+        background #56b3ca
+    &:nth-child(3)
+      .trening__item-imga
+        background #488999
     &:last-child
       margin-right 0
-    img
+    .trening__item-imga
       width 70px
       height 70px
       margin-right 20px
       box-shadow inset 0 0 8px rgba(0, 0, 0, 0.2)
       background-color #69d1ea
       border-radius 50%
+      display flex
+      justify-content center
+      align-items center
+
+      img
+        width max-content
+        height max-content
     p
       color #444444
       font-size 18px

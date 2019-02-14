@@ -1895,7 +1895,7 @@ input[type='submit'] + label
 
 .article-edu-program .more-info__section .left-side
 {
-    width: calc(100% - 560px);
+    width: calc(100% - 580px);
 }
 
 .article-edu-program .more-info__section h4
@@ -1925,7 +1925,7 @@ input[type='submit'] + label
 
 .article-edu-program .more-info__section .right-side-list
 {
-    max-width: 560px;
+    width: 560px;
 }
 
 .article-edu-program .more-info__section .right-side-list__item
@@ -2521,6 +2521,19 @@ input[type='submit'] + label
     justify-content: center;
 }
 
+.main-screen:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background: url('../images/bogarik.png') 0 0/cover;
+}
+
 .main-screen:after
 {
     position: absolute;
@@ -2540,6 +2553,8 @@ input[type='submit'] + label
     font-weight: 400;
     line-height: 3.625rem;
 
+    z-index: 2;
+
     margin-bottom: 80px;
 
     color: #fff;
@@ -2547,6 +2562,8 @@ input[type='submit'] + label
 
 .main-screen__list
 {
+    z-index: 2;
+
     justify-content: center;
 }
 
@@ -2603,6 +2620,41 @@ input[type='submit'] + label
     color: #444;
 }
 
+.mainko-pageko .section--education-results .info
+{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+
+    background: #fff;
+}
+
+.mainko-pageko .section--education-results .info h2
+{
+    color: #444;
+}
+
+.mainko-pageko .section--education-results .info p
+{
+    color: #444;
+}
+
+.mainko-pageko .section--education-results .info button
+{
+    margin-top: 40px;
+
+    color: #fff;
+    background: #56b3ca;
+}
+
+.mainko-pageko .section--education-results .info .result-item__img
+{
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid #488999;
+}
+
 .mainko-pageko .section--completed-projects h2,
 .mainko-pageko .section--our-clients h2
 {
@@ -2612,6 +2664,69 @@ input[type='submit'] + label
 .mainko-pageko .section--our-clients
 {
     padding: 0 85px 80px;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen__info
+{
+    padding-top: 209px;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen__info h1
+{
+    color: #fff;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen__info p
+{
+    color: #fff;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen__info span
+{
+    color: #fff;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen .button
+{
+    font-size: 1rem;
+    font-weight: 400;
+
+    max-height: 50px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    padding: 17px 30px;
+
+    color: #fff;
+    border: 1px solid;
+    border-radius: 30px;
+    background: 0;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen .format-edu__info h3
+{
+    color: #fff;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen .format-edu__info p
+{
+    color: #fff;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen .format-edu__img
+{
+    border: 1px solid #fff;
+    background: 0;
+}
+
+.mainko-pageko .puga-duga-ras .initial-acreen
+{
+    height: -webkit-max-content;
+    height:    -moz-max-content;
+    height:         max-content;
+    margin-top: 50px;
+    padding-bottom: 80px;
+
+    background: url('../images/bolnyak.png') 0 0/cover;
 }
 
 .trening
@@ -2653,13 +2768,27 @@ input[type='submit'] + label
     margin-right: 30px;
 }
 
+.trening .trening__item:nth-child(2) .trening__item-imga
+{
+    background: #56b3ca;
+}
+
+.trening .trening__item:nth-child(3) .trening__item-imga
+{
+    background: #488999;
+}
+
 .trening .trening__item:last-child
 {
     margin-right: 0;
 }
 
-.trening .trening__item img
+.trening .trening__item .trening__item-imga
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     width: 70px;
     height: 70px;
     margin-right: 20px;
@@ -2667,6 +2796,19 @@ input[type='submit'] + label
     border-radius: 50%;
     background: #69d1ea;
     box-shadow: inset 0 0 8px rgba(0,0,0,.2);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.trening .trening__item .trening__item-imga img
+{
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
 }
 
 .trening .trening__item p
@@ -2907,7 +3049,7 @@ input[type='submit'] + label
 
     content: '';
 
-    background: url('../images/9-layers.png') no-repeat center;
+    background: url('../images/10-layers-566.png') no-repeat center;
 }
 
 .circlusy--section .cirk1,
@@ -3075,9 +3217,9 @@ input[type='submit'] + label
     text-transform: none;
 
     color: #fff;
-    background: -webkit-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: -o-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: linear-gradient(136deg, #737373 0%, #3f3f3f 100%);
+    background: -webkit-linear-gradient(318deg, #52b5ce 0%, #488999 100%) rgba(0,0,0,.12);
+    background: -o-linear-gradient(318deg, #52b5ce 0%, #488999 100%) rgba(0,0,0,.12);
+    background: linear-gradient(132deg, #52b5ce 0%, #488999 100%) rgba(0,0,0,.12);
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
@@ -3145,9 +3287,9 @@ input[type='submit'] + label
     text-transform: none;
 
     color: #fff;
-    background: -webkit-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: -o-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: linear-gradient(136deg, #737373 0%, #3f3f3f 100%);
+    background: -webkit-linear-gradient(318deg, #52b5ce 0%, #488999 100%) rgba(0,0,0,.12);
+    background: -o-linear-gradient(318deg, #52b5ce 0%, #488999 100%) rgba(0,0,0,.12);
+    background: linear-gradient(132deg, #52b5ce 0%, #488999 100%) rgba(0,0,0,.12);
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
@@ -3180,7 +3322,9 @@ input[type='submit'] + label
     text-transform: none;
 
     color: #fff;
-    background: #ea6969;
+    background: -webkit-linear-gradient(318deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    background: -o-linear-gradient(318deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    background: linear-gradient(132deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
@@ -3318,9 +3462,9 @@ input[type='submit'] + label
     text-transform: none;
 
     color: #fff;
-    background: -webkit-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: -o-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: linear-gradient(136deg, #737373 0%, #3f3f3f 100%);
+    background: -webkit-linear-gradient(318deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    background: -o-linear-gradient(318deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    background: linear-gradient(132deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
@@ -3506,14 +3650,15 @@ input[type='submit'] + label
 
 .puga-duga .circlusy--section .cirk7
 {
-    background: -webkit-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: -o-linear-gradient(314deg, #737373 0%, #3f3f3f 100%);
-    background: linear-gradient(136deg, #737373 0%, #3f3f3f 100%);
+    background: -webkit-linear-gradient(318deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    background: -o-linear-gradient(318deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    background: linear-gradient(132deg, #6ae1ff 0%, #55b1c6 100%) rgba(0,0,0,.12);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 .puga-duga .circlusy--section:after
 {
-    background: url('../images/puga-duga-lines.png') no-repeat center;
+    background: url('../images/10-layers-566.png') no-repeat center;
 }
 
 .puga-duga .section--timetable

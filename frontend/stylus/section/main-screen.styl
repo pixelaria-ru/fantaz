@@ -5,6 +5,15 @@
   position relative
   padding 90px 0 270px
   background-image: linear-gradient(126deg, #57aabe 0%, #65cbe4 100%);
+  &:before
+    content ''
+    background-image url('../images/bogarik.png')
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    top 0
+    background-size: cover;
   &:after
     content ''
     background-image url('../images/after-bg.png')
@@ -17,10 +26,13 @@
     color #ffffff
     font-size 48px
     font-weight 400
+    z-index: 2;
     line-height 58px
     margin-bottom 80px
+
   &__list
     justify-content center
+    z-index: 2;
   &__item
     width 208px
     height 240px
@@ -50,8 +62,61 @@
 
 
 .mainko-pageko
+  .section--education-results
+    .info
+      height max-content
+      background: #fff;
+      h2
+        color #444444
+      p
+        color #444444
+      button
+        margin-top 40px
+        color: #fff;
+        background: #56b3ca;
+      .result-item__img
+        width: 60px;
+        height: 60px;
+        border: 1px solid #488999
   .section--completed-projects h2,.section--our-clients h2
     border 0
   .section--our-clients
 
     padding: 0 85px 80px;
+
+  .puga-duga-ras .initial-acreen__info
+    padding-top: 209px;
+    h1
+      color #fff
+    p
+      color #fff
+    span
+      color #fff
+  .puga-duga-ras .initial-acreen
+    .button
+      font-size: 1rem;
+      font-weight: 400;
+      max-height: 50px;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      padding: 17px 30px;
+      color: #fff;
+      border: 1px solid;
+      border-radius: 30px;
+      background: 0;
+
+  .puga-duga-ras .initial-acreen .format-edu__info h3
+    color #fff
+  .puga-duga-ras .initial-acreen .format-edu__info p
+    color #fff
+  .puga-duga-ras .initial-acreen .format-edu__img
+    background 0
+    border: 1px solid #fff;
+  .puga-duga-ras .initial-acreen
+      height: -webkit-max-content;
+      height: -moz-max-content;
+      height: max-content;
+      padding-bottom: 80px;
+      margin-top 50px
+      background-image: url(../images/bolnyak.png);
+      background-size: cover;
