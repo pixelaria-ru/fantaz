@@ -3132,6 +3132,32 @@ input[type='submit'] + label
     display: none;
 }
 
+.circlusy--section .cirk1:hover,
+.circlusy--section .cirk2:hover,
+.circlusy--section .cirk3:hover,
+.circlusy--section .cirk4:hover,
+.circlusy--section .cirk5:hover,
+.circlusy--section .cirk6:hover,
+.circlusy--section .cirk7:hover,
+.circlusy--section .cirk8:hover,
+.circlusy--section .cirk9:hover,
+.circlusy--section .cirk10:hover,
+.circlusy--section .cirk11:hover,
+.circlusy--section .cirk1:focus,
+.circlusy--section .cirk2:focus,
+.circlusy--section .cirk3:focus,
+.circlusy--section .cirk4:focus,
+.circlusy--section .cirk5:focus,
+.circlusy--section .cirk6:focus,
+.circlusy--section .cirk7:focus,
+.circlusy--section .cirk8:focus,
+.circlusy--section .cirk9:focus,
+.circlusy--section .cirk10:focus,
+.circlusy--section .cirk11:focus
+{
+    background: #ea6969;
+}
+
 .circlusy--section .cirk2
 {
     font-size: 1rem;
