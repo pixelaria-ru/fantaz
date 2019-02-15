@@ -3974,6 +3974,49 @@ input[type='submit'] + label
 
 @media (max-width: 1280px)
 {
+    .puga-duga-ras .initial-acreen__formats
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page .initial-acreen .format-edu,
+    .puga-duga-ras .initial-acreen .format-edu
+    {
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .mainko-pageko .puga-duga-ras .initial-acreen__info
+    {
+        padding-top: 209px;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        text-align: center;
+    }
+
+    .main-screen__list,
+    .trening .trening__list
+    {
+        flex-wrap: wrap;
+    }
+
+    .main-screen__item
+    {
+        margin-bottom: 17px;
+    }
+
+    .trening .trening__item
+    {
+        margin-bottom: 30px;
+    }
+
+    .trening .trening__item:last-child
+    {
+        margin-right: 30px;
+    }
+
     .education-form:nth-child(3),
     .education-form:nth-child(6)
     {
@@ -3983,6 +4026,27 @@ input[type='submit'] + label
     .section--initial .container:before
     {
         left: 522px;
+    }
+
+    .circlusy--section .cirk1,
+    .circlusy--section .cirk2,
+    .circlusy--section .cirk3,
+    .circlusy--section .cirk4,
+    .circlusy--section .cirk5,
+    .circlusy--section .cirk6,
+    .circlusy--section .cirk7,
+    .circlusy--section .cirk8,
+    .circlusy--section .cirk9,
+    .circlusy--section .cirk10,
+    .circlusy--section .cirk11
+    {
+        display: none;
+    }
+
+    .puga-duga .circlusy--section:after
+    {
+        background: url('../images/55-layers.png') no-repeat 50%;
+        background-size: contain;
     }
 }
 
