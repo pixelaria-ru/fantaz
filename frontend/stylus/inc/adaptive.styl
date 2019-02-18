@@ -191,8 +191,13 @@
     font-size: 15px;
   .section--timetable
     display none
+@media(max-width 770px)
+  .puga-duga#keyotdel
+    margin-top: 350px;
+    .circlusy--section
+          height: 600px;
 @media(max-width 768px)
-  .page-otdel
+  .page-otdel,.puga-duga#otdel
     .initial-acreen .wrap .justi-bet
       flex-direction: column;
     .initi__container-righter
@@ -413,7 +418,31 @@
     max-width: 100%;
     margin-left: 0;
     margin-top: 20px;
+@media(max-width 620px)
+  .puga-duga#keyotdel
+    margin-top: 430px;
+    z-index: 9;
+    position: relative;
+    .circlusy--section
+          height: 500px;
+@media(max-width 530px)
+  .puga-duga#keyotdel
+    display none
+  .puga-duga .initial-acreen
+        height: max-content;
+  .puga-duga .initial-acreen .wrap
+    height: max-content;
+  .puga-duga#otdel .initi__container-righter
+        margin-top: 38px;
 @media(min-width 320px) and (max-width 435px)
+  .puga-duga#keyotdel
+    display none
+  .puga-duga .initial-acreen
+        height: max-content;
+  .puga-duga .initial-acreen .wrap
+    height: max-content;
+  .puga-duga#otdel .initi__container-righter
+        margin-top: 38px;
   .initial-info:after, .initial-info:before
     position: absolute;
     bottom: -85px;
@@ -461,7 +490,7 @@
           display none
 
 
-  .page-otdel
+  .page-otdel,.puga-duga#otdel
     .initi__container-righter
       margin-left: 0px;
       padding: 30px 20px;
@@ -470,10 +499,10 @@
       p
         margin-left: 0;
     .initial-acreen
-      height: 530px;
+      height: max-content;
       align-items flex-start
       .wrap
-        height: 230px;
+        height: max-content;
         margin-top: 50px;
         .odel-buttons
           justify-content: center;
@@ -743,3 +772,11 @@
 
   .section--completed-projects
     overflow auto
+  .puga-duga#keyotdel
+    display none
+  .puga-duga .initial-acreen
+        height: max-content;
+  .puga-duga .initial-acreen .wrap
+    height: max-content;
+  .puga-duga#otdel .initi__container-righter
+        margin-top: 38px;
