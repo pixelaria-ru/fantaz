@@ -50,6 +50,9 @@ if (document.querySelector('.article-edu-program')) {
       });
       program[i].querySelector('.more-info__close').addEventListener('click', function () {
         this.parentNode.parentNode.classList.remove('active');
+        this.parentNode.parentNode.querySelector('.button').innerHTML = '<b>описание курса</b>';
+        window.scrollBy(0, this.parentNode.parentNode.getBoundingClientRect().top - 130);
+        console.log(this.parentNode.parentNode.getBoundingClientRect().top);
       });
     }
   })();
