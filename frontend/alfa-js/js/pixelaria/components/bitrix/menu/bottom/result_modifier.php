@@ -1,1 +1,0 @@
-<?$arResult = aspro::getChilds($arResult);?>
