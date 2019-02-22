@@ -193,6 +193,53 @@
     color: #444;
 }
 
+.buttonUpu
+{
+    position: fixed;
+    z-index: 9;
+    right: 15%;
+    bottom: 5%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    width: 60px;
+    height: 80px;
+
+    cursor: pointer;
+    transition: .33s;
+    -webkit-transform: scale(.8);
+        transform: scale(.8);
+
+    opacity: 0;
+    border-radius: 32px;
+    background: #56b3ca;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonUpu.back_to_top-show
+{
+    opacity: 1;
+}
+
+.buttonUpu svg
+{
+    width: 25px;
+    height: 25px;
+
+    -webkit-transform: rotate(-90deg);
+
+            transform: rotate(-90deg);
+
+    fill: #fff;
+}
+
 .modalia,
 .projects-modal,
 .formats-modal
@@ -397,8 +444,6 @@
 
 .header__nav
 {
-    overflow: auto;
-
     width: 100%;
     max-height: 50px;
     padding: calc((50px - 16px) / 2) 0;
@@ -4705,6 +4750,11 @@ input[type='submit'] + label
     .puga-duga#otdel .initi__container-righter
     {
         margin-top: 38px;
+    }
+
+    .puga-duga#otdel .initi__container-righter .header__nav
+    {
+        overflow: auto;
     }
 }
 

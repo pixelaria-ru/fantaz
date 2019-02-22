@@ -384,3 +384,52 @@ if(document.querySelector('.article-opinion')){
   }())
 
 }
+
+
+(function(){
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET','images/svg/right-arrow.svg' ,'true');
+    xhr.send()
+
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState === 4){
+        const p = document.createElement('p');
+        const maina = document.querySelector('main')
+        p.innerHTML = xhr.responseText
+        p.className='buttonUpu'
+        maina.appendChild(p)
+
+
+        'use strict';
+    /* begin begin Back to Top button  */
+    (function() {
+      function trackScroll() {
+        var scrolled = window.pageYOffset;
+        var coords = document.documentElement.clientHeight;
+
+        if (scrolled > coords) {
+          goTopBtn.classList.add('back_to_top-show');
+        }
+        if (scrolled < coords) {
+          goTopBtn.classList.remove('back_to_top-show');
+        }
+      }
+
+      function backToTop() {
+        if (window.pageYOffset > 0) {
+          window.scrollBy(0, -80);
+          setTimeout(backToTop, 0);
+        }
+      }
+
+      var goTopBtn = document.querySelector('.buttonUpu');
+
+      window.addEventListener('scroll', trackScroll);
+      goTopBtn.addEventListener('click', backToTop);
+    })();
+    /* end begin Back to Top button  */
+      }
+    }
+
+
+}())

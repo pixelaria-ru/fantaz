@@ -95,7 +95,31 @@
 
 
 
-
+.buttonUpu
+    position: fixed;
+    z-index: 9;
+    right: 15%;
+    bottom: 5%;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    border-radius: 32px;
+    background: #56b3ca
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    width: 60px;
+    height: 80px;
+    display flex
+    justify-content center
+    align-items center
+    opacity 0
+    transition .33s
+    cursor pointer
+    &.back_to_top-show
+      opacity 1
+    svg
+      fill #ffffff
+      transform rotate(-90deg)
+      height 25px
+      width 25px
 
 .modalia,.projects-modal,.formats-modal
   z-index -9
