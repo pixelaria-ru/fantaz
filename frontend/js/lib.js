@@ -394,7 +394,7 @@ if(document.querySelector('.article-opinion')){
     xhr.onreadystatechange = function(){
       if(xhr.readyState === 4){
         const p = document.createElement('p');
-        const maina = document.querySelector('main')
+        const maina = document.querySelector('.mainx')
         p.innerHTML = xhr.responseText
         p.className='buttonUpu'
         maina.appendChild(p)

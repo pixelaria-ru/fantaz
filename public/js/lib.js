@@ -356,7 +356,7 @@ if (document.querySelector('.article-opinion')) {
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       var p = document.createElement('p');
-      var maina = document.querySelector('main');
+      var maina = document.querySelector('.mainx');
       p.innerHTML = xhr.responseText;
       p.className = 'buttonUpu';
       maina.appendChild(p);
