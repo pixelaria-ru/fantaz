@@ -349,48 +349,34 @@ if (document.querySelector('.article-opinion')) {
 }
 
 (function () {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'images/svg/right-arrow.svg', 'true');
-  xhr.send();
+  'use strict';
+  /* begin begin Back to Top button  */
 
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      var p = document.createElement('p');
-      var maina = document.querySelector('.mainx');
-      p.innerHTML = xhr.responseText;
-      p.className = 'buttonUpu';
-      maina.appendChild(p);
-      'use strict';
-      /* begin begin Back to Top button  */
+  (function () {
+    function trackScroll() {
+      var scrolled = window.pageYOffset;
+      var coords = document.documentElement.clientHeight;
 
+      if (scrolled > coords) {
+        goTopBtn.classList.add('back_to_top-show');
+      }
 
-      (function () {
-        function trackScroll() {
-          var scrolled = window.pageYOffset;
-          var coords = document.documentElement.clientHeight;
-
-          if (scrolled > coords) {
-            goTopBtn.classList.add('back_to_top-show');
-          }
-
-          if (scrolled < coords) {
-            goTopBtn.classList.remove('back_to_top-show');
-          }
-        }
-
-        function backToTop() {
-          if (window.pageYOffset > 0) {
-            window.scrollBy(0, -80);
-            setTimeout(backToTop, 0);
-          }
-        }
-
-        var goTopBtn = document.querySelector('.buttonUpu');
-        window.addEventListener('scroll', trackScroll);
-        goTopBtn.addEventListener('click', backToTop);
-      })();
-      /* end begin Back to Top button  */
-
+      if (scrolled < coords) {
+        goTopBtn.classList.remove('back_to_top-show');
+      }
     }
-  };
+
+    function backToTop() {
+      if (window.pageYOffset > 0) {
+        window.scrollBy(0, -80);
+        setTimeout(backToTop, 0);
+      }
+    }
+
+    var goTopBtn = document.querySelector('.buttonUpu');
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+  })();
+  /* end begin Back to Top button  */
+
 })();

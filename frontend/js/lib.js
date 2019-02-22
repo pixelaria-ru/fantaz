@@ -387,17 +387,7 @@ if(document.querySelector('.article-opinion')){
 
 
 (function(){
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET','images/svg/right-arrow.svg' ,'true');
-    xhr.send()
 
-    xhr.onreadystatechange = function(){
-      if(xhr.readyState === 4){
-        const p = document.createElement('p');
-        const maina = document.querySelector('.mainx')
-        p.innerHTML = xhr.responseText
-        p.className='buttonUpu'
-        maina.appendChild(p)
 
 
         'use strict';
@@ -428,8 +418,7 @@ if(document.querySelector('.article-opinion')){
       goTopBtn.addEventListener('click', backToTop);
     })();
     /* end begin Back to Top button  */
-      }
-    }
+
 
 
 }())
