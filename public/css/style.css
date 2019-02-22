@@ -413,7 +413,7 @@
     width: 100%;
 }
 
-.header.fixed
+.header.fixed .header__up-line
 {
     position: fixed;
     z-index: 9999;
