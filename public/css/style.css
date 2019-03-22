@@ -13,8 +13,9 @@
 
 body
 {
-    word-wrap: break-word;
-    word-break: keep-all;
+    word-wrap: normal;
+
+    word-wrap: normal;
 }
 
 .flex
