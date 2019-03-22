@@ -11,6 +11,12 @@
     margin-top: 130px;
 }
 
+body
+{
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
 .flex
 {
     display: -webkit-box;
