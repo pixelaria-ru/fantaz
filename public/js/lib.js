@@ -340,12 +340,24 @@ if (document.querySelector('.article-opinion')) {
       comments[0].classList.add('active');
       dots[1].classList.remove('active');
       comments[1].classList.remove('active');
+      dots[2].classList.remove('active');
+      comments[2].classList.remove('active');
     });
     dots[1].addEventListener('click', function () {
       dots[1].classList.add('active');
       comments[1].classList.add('active');
       dots[0].classList.remove('active');
       comments[0].classList.remove('active');
+      dots[2].classList.remove('active');
+      comments[2].classList.remove('active');
+    });
+    dots[2].addEventListener('click', function () {
+      dots[2].classList.add('active');
+      comments[2].classList.add('active');
+      dots[0].classList.remove('active');
+      comments[0].classList.remove('active');
+      dots[1].classList.remove('active');
+      comments[1].classList.remove('active');
     });
   })();
 }
